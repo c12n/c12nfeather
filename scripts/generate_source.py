@@ -189,6 +189,55 @@ def main():
         repo = app["repo"]
         owner = app.get("owner", "c12n")
         print(f"== {repo}")
+
+        # Hosted apps: the IPA lives in this repo (ipas/) because the app's
+        # own repo is private, so GitHub release downloads are not public.
+        # All metadata is pinned in apps_config.json under "hosted".
+        hosted = app.get("hosted")
+        if hosted:
+            icon_path = f"icons/{repo}.png"
+            icon_url = f"{base}/{icon_path}" if os.path.exists(os.path.join(ROOT, icon_path)) else ""
+            ver = {
+                "version": hosted["version"],
+                "buildVersion": hosted.get("buildVersion", hosted["version"]),
+                "date": hosted["date"],
+                "localizedDescription": hosted.get("versionDescription", f"{app['name']} {hosted['version']}"),
+                "downloadURL": f"{base}/{hosted['downloadPath']}",
+                "size": hosted["size"],
+                **({"minOSVersion": hosted["minOSVersion"]} if hosted.get("minOSVersion") else {}),
+            }
+            apps_out.append({
+                "name": app["name"],
+                "bundleIdentifier": hosted["bundleIdentifier"],
+                "developerName": "c12n Apps",
+                "subtitle": app.get("subtitle", ""),
+                "localizedDescription": app["description"],
+                "iconURL": icon_url,
+                "tintColor": app.get("tintColor", src_cfg["tintColor"]),
+                "category": app.get("category", "utilities"),
+                "versions": [ver],
+                "version": ver["version"],
+                "versionDate": ver["date"],
+                "versionDescription": ver["localizedDescription"],
+                "downloadURL": ver["downloadURL"],
+                "size": ver["size"],
+                **({"minOSVersion": hosted["minOSVersion"]} if hosted.get("minOSVersion") else {}),
+                "beta": False,
+                "appPermissions": {"entitlements": [], "privacy": {}},
+            })
+            featured.append(hosted["bundleIdentifier"])
+            news_out.append({
+                "identifier": f"{hosted['bundleIdentifier']}-{ver['version']}",
+                "title": f"{app['name']} {ver['version']} is out",
+                "caption": f"Update {app['name']} to version {ver['version']}.",
+                "date": ver["date"],
+                "tintColor": app.get("tintColor", src_cfg["tintColor"]),
+                "imageURL": icon_url,
+                "notify": False,
+                "appID": hosted["bundleIdentifier"],
+            })
+            print(f"  ok (hosted): {app['name']} {ver['version']}")
+            continue
         try:
             releases = gh_json(f"{GITHUB_API}/repos/{owner}/{repo}/releases?per_page=30")
         except Exception as e:
