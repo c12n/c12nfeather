@@ -1,0 +1,76 @@
+{
+  "name": "c12n Apps",
+  "identifier": "com.c12n.apps.source",
+  "subtitle": "Every c12n iOS app, always up to date",
+  "description": "The official AltStore / Feather source for c12n Apps. Every app here is built by c12n Apps and published on GitHub. This source updates itself automatically: when a new version of any app is released on GitHub, it appears here within the hour — no manual steps.\n\nAll IPAs are unsigned sideload builds. Install them with Feather or AltStore using your own certificate / Apple ID.\n\nCopyright (c) 2026 c12n Apps",
+  "iconURL": "https://c12nfeather.07051969.xyz/icons/source-icon.png",
+  "website": "https://c12nfeather.07051969.xyz",
+  "tintColor": "#0F766E",
+  "featuredApps": [
+    "com.c12n.calculator"
+  ],
+  "apps": [
+    {
+      "name": "Calculator",
+      "bundleIdentifier": "com.c12n.calculator",
+      "developerName": "c12n Apps",
+      "subtitle": "A modern SwiftUI calculator",
+      "localizedDescription": "A modern calculator for iOS 17+ with calculation history, haptics, a unit converter, a colour picker, changeable app icons and a Duo UI. Clean, fast, and private — everything stays on your device.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/swiftui-calculator.png",
+      "tintColor": "#FF9500",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "1.1.1",
+          "buildVersion": "3",
+          "date": "2026-10-26T21:57:34Z",
+          "localizedDescription": "## SwiftUI Calculator v1.1.1\r\n\r\nThe full 1.1 feature release, with Claude's review fixes folded in (this supersedes the planned 1.1.0 — there is no separate 1.1.0 release).\r\n\r\n### New in 1.1\r\n- **Math history** — every \"=\" result is saved (persisted, latest first, up to 100). History records the full chained expression (e.g. \"2 + 3 × 4\"), tap an entry to reuse its exact value, swipe to delete, Clear All with confirmation\r\n- **Haptics** — light taps for digits, medium for operations, heavy for \"=\", and an error buzz that fires once when an error appears (toggle in Settings)\r\n- **Unit & currency converter** — Length, Weight, Temperature, Volume, Speed, Data, and Currency (offline October 2026 rates per 1 USD, labelled approximate — not live)\r\n- **Colour picker** — 8 accent presets or any custom colour; operation keys follow it, with clamped values and readable text for light accents\r\n- **Icon changing** — switch the Home Screen icon in Settings: Classic Orange, Blue, Green, Purple, or Mono. All alternate icons are bundled in the asset catalog (verified in the built app's Info.plist)\r\n- **Appearance override** — System / Light / Dark in Settings\r\n- **iPad & landscape UI** — Duo layout: calculator on the left, History / Converter / Settings panel on the right\r\n- **iPhone Duo** — landscape iPhone gets the two-pane Duo layout; Duo mode shows two independent calculators side by side (stacked in portrait) sharing one history. Rotating never loses your calculation — view models live in the root views\r\n\r\n### Download\r\n- `Calculator.ipa` (unsigned) — built by GitHub Actions run #10 (macos-26, Xcode 26.6), bundle ID `com.c12n.calculator`, version 1.1.1 (build 3)\r\n- SHA-256 (Calculator.ipa): `7c309a4575f10f05f0a97e6e4459182d68256620759dcacd5e93c98d1fadc662`\r\n\r\n### Installing\r\nThis IPA is unsigned. It will not install on a stock iPhone by itself — re-sign / sideload it with your own Apple ID, or run the project on a device from Xcode.\r\n\r\n### License\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/swiftui-calculator/releases/download/v1.1.1/Calculator.ipa",
+          "size": 387573,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.1",
+          "buildVersion": "1.0.1",
+          "date": "2026-10-26T21:04:17Z",
+          "localizedDescription": "## SwiftUI Calculator v1.0.1\r\n\r\nLiquid Glass polish from a Claude review of the v1.0.0 code. No feature changes.\r\n\r\n### Fixes\r\n- `GlassEffectContainer` spacing reduced from 14 to 4, so neighbouring Liquid Glass keys no longer risk bridging/merging into each other, especially when an interactive key swells on press\r\n- On iOS 26, the custom button press effect (brightness + scale) no longer stacks on top of interactive Liquid Glass press feedback — glass handles it natively now; the custom effect still applies on iOS 17-25\r\n\r\n### Download\r\n- `Calculator.ipa` (unsigned) — built by GitHub Actions run #4 (macos-26, Xcode 26.6), bundle ID `com.c12n.calculator`, version 1.0.1\r\n- SHA-256 (Calculator.ipa): `8173a0b438e5ab25273c69d9ab9bf6543b6b0fff0688b9016f9d7f485a2270e0`\r\n\r\n### Installing\r\nThis IPA is unsigned. It will not install on a stock iPhone by itself — re-sign / sideload it with your own Apple ID, or run the project on a device from Xcode.\r\n\r\n### License\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/swiftui-calculator/releases/download/v1.0.1/Calculator.ipa",
+          "size": 262275,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.0",
+          "date": "2026-10-26T20:58:05Z",
+          "localizedDescription": "## SwiftUI Calculator — first release\r\n\r\nA modern calculator for iPhone and iPad, built with SwiftUI.\r\n\r\n### Highlights\r\n- SwiftUI calculator app (iOS 17+), originally generated with Claude\r\n- Native Liquid Glass UI on iOS 26, with an adaptive fallback on iOS 17-25\r\n- Native Light / Dark Mode — follows the system appearance\r\n- Custom app icon, including Dark and Tinted variants\r\n- Easter egg: dividing by zero says \"bruh\"\r\n\r\n### Download\r\n- `Calculator.ipa` (unsigned) — built by GitHub Actions (macos-26, Xcode 26.6), bundle ID `com.c12n.calculator`, version 1.0\r\n- SHA-256 (Calculator.ipa): `4dbe79bb9916f4ababfdb50037ce5ecc21364b6b72eae08b52f80bbb1ee36fff`\r\n\r\n### Installing\r\nThis IPA is unsigned. It will not install on a stock iPhone by itself — re-sign / sideload it with your own Apple ID, or run the project on a device from Xcode.\r\n\r\n### License\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/swiftui-calculator/releases/download/v1.0.0/Calculator.ipa",
+          "size": 261872,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "version": "1.1.1",
+      "versionDate": "2026-10-26T21:57:34Z",
+      "versionDescription": "## SwiftUI Calculator v1.1.1\r\n\r\nThe full 1.1 feature release, with Claude's review fixes folded in (this supersedes the planned 1.1.0 — there is no separate 1.1.0 release).\r\n\r\n### New in 1.1\r\n- **Math history** — every \"=\" result is saved (persisted, latest first, up to 100). History records the full chained expression (e.g. \"2 + 3 × 4\"), tap an entry to reuse its exact value, swipe to delete, Clear All with confirmation\r\n- **Haptics** — light taps for digits, medium for operations, heavy for \"=\", and an error buzz that fires once when an error appears (toggle in Settings)\r\n- **Unit & currency converter** — Length, Weight, Temperature, Volume, Speed, Data, and Currency (offline October 2026 rates per 1 USD, labelled approximate — not live)\r\n- **Colour picker** — 8 accent presets or any custom colour; operation keys follow it, with clamped values and readable text for light accents\r\n- **Icon changing** — switch the Home Screen icon in Settings: Classic Orange, Blue, Green, Purple, or Mono. All alternate icons are bundled in the asset catalog (verified in the built app's Info.plist)\r\n- **Appearance override** — System / Light / Dark in Settings\r\n- **iPad & landscape UI** — Duo layout: calculator on the left, History / Converter / Settings panel on the right\r\n- **iPhone Duo** — landscape iPhone gets the two-pane Duo layout; Duo mode shows two independent calculators side by side (stacked in portrait) sharing one history. Rotating never loses your calculation — view models live in the root views\r\n\r\n### Download\r\n- `Calculator.ipa` (unsigned) — built by GitHub Actions run #10 (macos-26, Xcode 26.6), bundle ID `com.c12n.calculator`, version 1.1.1 (build 3)\r\n- SHA-256 (Calculator.ipa): `7c309a4575f10f05f0a97e6e4459182d68256620759dcacd5e93c98d1fadc662`\r\n\r\n### Installing\r\nThis IPA is unsigned. It will not install on a stock iPhone by itself — re-sign / sideload it with your own Apple ID, or run the project on a device from Xcode.\r\n\r\n### License\r\nMIT — Copyright (c) 2026 c12n Apps",
+      "downloadURL": "https://github.com/c12n/swiftui-calculator/releases/download/v1.1.1/Calculator.ipa",
+      "size": 387573,
+      "minOSVersion": "17.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    }
+  ],
+  "news": [
+    {
+      "identifier": "com.c12n.calculator-1.1.1",
+      "title": "Calculator 1.1.1 is out",
+      "caption": "Update Calculator to version 1.1.1.",
+      "date": "2026-10-26T21:57:34Z",
+      "tintColor": "#FF9500",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/swiftui-calculator.png",
+      "notify": false,
+      "appID": "com.c12n.calculator"
+    }
+  ]
+}
