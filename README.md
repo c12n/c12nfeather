@@ -20,6 +20,8 @@ Fallback URL (same file, via GitHub Pages): https://c12n.github.io/c12nfeather/s
 
 | App | What it is |
 |---|---|
+| Al Rashid Prayer | AlRashid Mosque Edmonton prayer times, widgets and Live Activity |
+| DATS Edmonton | Edmonton's DATS paratransit, in a big-type, high-contrast app |
 | Viu Live TV | Live TV from Viu, natively on iOS |
 | Matcha Music | Multi-server (Subsonic / Jellyfin / Plex) and on-device music player |
 | Tap Tap Phoenix | The rhythm game, remade for iOS 26 / 27 |
@@ -41,6 +43,14 @@ from the IPA itself whenever a new release appears (cached in
 Ship a new app version the usual way — publish a GitHub Release with the IPA
 attached — and it shows up in Feather / AltStore on its own within the hour.
 To add a brand-new app to the source, add one entry to `apps_config.json`.
+
+Two apps — **Al Rashid Prayer** and **DATS Edmonton** — live in private
+repos, so their release downloads are not public. Their current IPAs are
+hosted in this repo under `ipas/` (served at
+`https://c12nfeather.07051969.xyz/ipas/…`) and pinned as `hosted` entries in
+`apps_config.json`; the generator carries them into the source unchanged.
+Refreshing one means replacing its file in `ipas/` and updating its pinned
+version, size and date in the config.
 
 All IPAs are unsigned sideload builds. Install them with your own certificate
 in Feather, or your Apple ID in AltStore.
