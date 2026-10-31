@@ -348,7 +348,9 @@ def main():
         "subtitle": src_cfg["subtitle"],
         "description": src_cfg["description"],
         "iconURL": f"{base}/icons/source-icon.png",
-        "headerURL": "",
+        # NOTE: no "headerURL" key at all. Feather's AltSourceKit decodes
+        # headerURL as a URL with `try`, so an empty string makes the WHOLE
+        # source fail to parse ("isn't in the correct format"). Omit, never "".
         "website": src_cfg["website"],
         "tintColor": src_cfg["tintColor"],
         "featuredApps": featured,
