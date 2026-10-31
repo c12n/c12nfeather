@@ -4,7 +4,6 @@
   "subtitle": "Every c12n iOS app, always up to date",
   "description": "The official AltStore / Feather source for c12n Apps. Every app here is built by c12n Apps and published on GitHub. This source updates itself automatically: when a new version of any app is released on GitHub, it appears here within the hour — no manual steps.\n\nAll IPAs are unsigned sideload builds. Install them with Feather or AltStore using your own certificate / Apple ID.\n\nCopyright (c) 2026 c12n Apps",
   "iconURL": "https://c12nfeather.07051969.xyz/icons/source-icon.png",
-  "headerURL": "",
   "website": "https://c12nfeather.07051969.xyz",
   "tintColor": "#0F766E",
   "featuredApps": [
