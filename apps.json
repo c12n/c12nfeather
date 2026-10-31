@@ -444,8 +444,17 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.1.0",
+          "buildVersion": "2",
+          "date": "2026-10-31T16:38:05Z",
+          "localizedDescription": "Apple logo ASCII art that fits the screen and never skews. Beautiful grouped info cards (Device / System / Storage & Power) with labels stacked above values — no more broken 'Stor-age' / 'Bat-tery' wrapping. Proper landscape layout: logo panel left, info right, with automatic refresh when you rotate to landscape. More accurate info: iPhone 17 Pro Max (iPhone18,2) and Apple A19 Pro now named correctly (plus A17 Pro/A18/A18 Pro/A19), battery fixed (was 'unknown' — monitoring is now enabled before reading and updates live), storage uses the same volume figures as iOS Settings, RAM shows the marketed size with iOS's reported figure, and a new Display row (points, native pixels, max Hz).",
+          "downloadURL": "https://github.com/c12n/fastfetch/releases/download/v1.1.0/Fastfetch.ipa",
+          "size": 71923,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.0.0",
-          "buildVersion": "1",
+          "buildVersion": "1.0.0",
           "date": "2026-10-27T01:15:10Z",
           "localizedDescription": "Fastfetch for iOS 1.0.0 — a tiny neofetch-style system info app.\r\n\r\nShows device model + identifier, SoC, iOS version, kernel version, hostname, CPU cores, RAM, storage, battery and uptime. Everything is computed on-device with public APIs.\r\n\r\nInstall: the IPA is unsigned — sideload it with AltStore, SideStore, Sideloadly or a similar tool, which signs it with your Apple ID. Requires iOS 17.0+.\r\n\r\nFastfetch.ipa — 46,944 bytes — SHA-256: 499b48d4e04e21d4a532f9a5f5d4dff63b99662bd13579abb6b5e0f74595c141\r\n\r\nMIT — Copyright (c) 2026 c12n Apps",
           "downloadURL": "https://github.com/c12n/fastfetch/releases/download/v1.0.0/Fastfetch.ipa",
@@ -453,11 +462,11 @@
           "minOSVersion": "17.0"
         }
       ],
-      "version": "1.0.0",
-      "versionDate": "2026-10-27T01:15:10Z",
-      "versionDescription": "Fastfetch for iOS 1.0.0 — a tiny neofetch-style system info app.\r\n\r\nShows device model + identifier, SoC, iOS version, kernel version, hostname, CPU cores, RAM, storage, battery and uptime. Everything is computed on-device with public APIs.\r\n\r\nInstall: the IPA is unsigned — sideload it with AltStore, SideStore, Sideloadly or a similar tool, which signs it with your Apple ID. Requires iOS 17.0+.\r\n\r\nFastfetch.ipa — 46,944 bytes — SHA-256: 499b48d4e04e21d4a532f9a5f5d4dff63b99662bd13579abb6b5e0f74595c141\r\n\r\nMIT — Copyright (c) 2026 c12n Apps",
-      "downloadURL": "https://github.com/c12n/fastfetch/releases/download/v1.0.0/Fastfetch.ipa",
-      "size": 46944,
+      "version": "1.1.0",
+      "versionDate": "2026-10-31T16:38:05Z",
+      "versionDescription": "Apple logo ASCII art that fits the screen and never skews. Beautiful grouped info cards (Device / System / Storage & Power) with labels stacked above values — no more broken 'Stor-age' / 'Bat-tery' wrapping. Proper landscape layout: logo panel left, info right, with automatic refresh when you rotate to landscape. More accurate info: iPhone 17 Pro Max (iPhone18,2) and Apple A19 Pro now named correctly (plus A17 Pro/A18/A18 Pro/A19), battery fixed (was 'unknown' — monitoring is now enabled before reading and updates live), storage uses the same volume figures as iOS Settings, RAM shows the marketed size with iOS's reported figure, and a new Display row (points, native pixels, max Hz).",
+      "downloadURL": "https://github.com/c12n/fastfetch/releases/download/v1.1.0/Fastfetch.ipa",
+      "size": 71923,
       "minOSVersion": "17.0",
       "beta": false,
       "appPermissions": {
@@ -558,10 +567,10 @@
       "appID": "com.c12n.calculator"
     },
     {
-      "identifier": "com.c12n.fastfetch-1.0.0",
-      "title": "Fastfetch 1.0.0 is out",
-      "caption": "Update Fastfetch to version 1.0.0.",
-      "date": "2026-10-27T01:15:10Z",
+      "identifier": "com.c12n.fastfetch-1.1.0",
+      "title": "Fastfetch 1.1.0 is out",
+      "caption": "Update Fastfetch to version 1.1.0.",
+      "date": "2026-10-31T16:38:05Z",
       "tintColor": "#A855F7",
       "imageURL": "https://c12nfeather.07051969.xyz/icons/fastfetch.png",
       "notify": false,

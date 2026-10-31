@@ -8,12 +8,12 @@
     "version": "1.1.0"
   },
   "fastfetch": {
-    "buildVersion": "1",
+    "buildVersion": "2",
     "bundleIdentifier": "com.c12n.fastfetch",
     "minOSVersion": "17.0",
     "name": "Fastfetch",
-    "tag": "v1.0.0",
-    "version": "1.0.0"
+    "tag": "v1.1.0",
+    "version": "1.1.0"
   },
   "matcha-music": {
     "buildVersion": "1",
