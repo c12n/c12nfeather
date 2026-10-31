@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>c12n Apps — AltStore / Feather Source</title>
+<style>
+  :root { color-scheme: light dark; --teal:#0F766E; }
+  body { font-family: -apple-system, system-ui, sans-serif; margin:0; background:#0b0f0e; color:#e8ecec; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { text-align:center; padding: 24px 0 8px; }
+  header img { width:96px; height:96px; border-radius:22px; }
+  h1 { font-size: 34px; margin: 14px 0 4px; }
+  .sub { color:#9fb3b0; font-size:17px; }
+  .sourcebox { background:#12211f; border:1px solid #1e3a37; border-radius:14px; padding:16px; margin:24px 0; text-align:center; }
+  .sourcebox code { display:block; font-size:14px; word-break:break-all; margin:10px 0; color:#7ee8dc; }
+  .btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:12px; }
+  a.btn { background:var(--teal); color:#fff; text-decoration:none; padding:12px 18px; border-radius:12px; font-weight:600; }
+  button.btn { background:#243b38; color:#fff; border:none; padding:12px 18px; border-radius:12px; font-weight:600; font-size:16px; cursor:pointer; }
+  .app { display:flex; gap:14px; background:#101816; border:1px solid #1d2b29; border-radius:16px; padding:14px; margin:12px 0; align-items:flex-start; }
+  .app img { width:64px; height:64px; border-radius:14px; flex:none; }
+  .app h3 { margin:2px 0 2px; font-size:19px; }
+  .app .meta { color:#9fb3b0; font-size:13px; margin-bottom:6px; }
+  .app p { margin:0; color:#c8d2d0; font-size:14px; line-height:1.45; white-space:pre-line; }
+  footer { text-align:center; color:#728985; font-size:13px; margin-top:36px; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icons/source-icon.png" alt="c12n Apps">
+    <h1>c12n Apps</h1>
+    <div class="sub">Every c12n iOS app, always up to date — for Feather &amp; AltStore</div>
+  </header>
+
+  <div class="sourcebox">
+    <strong>Add this source URL</strong>
+    <code id="srcurl">https://c12nfeather.07051969.xyz/source.json</code>
+    <div class="btns">
+      <a class="btn" href="feather://source?url=https://c12nfeather.07051969.xyz/source.json">Add to Feather</a>
+      <a class="btn" href="altstore://source?url=https://c12nfeather.07051969.xyz/source.json">Add to AltStore</a>
+      <button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('srcurl').textContent);this.textContent='Copied!'">Copy URL</button>
+    </div>
+    <div style="color:#9fb3b0;font-size:13px;margin-top:10px">This source updates itself within an hour of any new app release on GitHub.</div>
+  </div>
+
+  <div id="apps">Loading apps…</div>
+
+  <footer>
+    All IPAs are unsigned sideload builds — install with your own certificate in Feather, or your Apple ID in AltStore.<br>
+    Copyright (c) 2026 c12n Apps
+  </footer>
+</div>
+<script>
+fetch('source.json').then(r => r.json()).then(src => {
+  document.getElementById('apps').innerHTML = src.apps.map(a => `
+    <div class="app">
+      <img src="${a.iconURL}" alt="">
+      <div>
+        <h3>${a.name}</h3>
+        <div class="meta">Version ${a.version} · ${(a.size/1048576).toFixed(1)} MB · iOS ${a.minOSVersion || '17.0'}+ · ${a.developerName}</div>
+        <p>${a.localizedDescription}</p>
+      </div>
+    </div>`).join('');
+}).catch(e => { document.getElementById('apps').textContent = 'Could not load the app list.'; });
+</script>
+</body>
+</html>

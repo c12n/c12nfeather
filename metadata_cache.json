@@ -1,0 +1,66 @@
+{
+  "S5LBox": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.j0shua.S5LBox",
+    "minOSVersion": "13.0",
+    "name": "S5LBox",
+    "tag": "ios4-421-v8",
+    "version": "1.1.0"
+  },
+  "fastfetch": {
+    "buildVersion": "1",
+    "bundleIdentifier": "com.c12n.fastfetch",
+    "minOSVersion": "17.0",
+    "name": "Fastfetch",
+    "tag": "v1.0.0",
+    "version": "1.0.0"
+  },
+  "matcha-music": {
+    "buildVersion": "1",
+    "bundleIdentifier": "com.c12n.matchamusic",
+    "minOSVersion": "17.0",
+    "name": "Matcha Music",
+    "tag": "v1.0.0",
+    "version": "1.0.0"
+  },
+  "retrophone": {
+    "buildVersion": "2",
+    "bundleIdentifier": "com.c12n.retrophone",
+    "minOSVersion": "17.0",
+    "name": "RetroPhone",
+    "tag": "v0.2.0",
+    "version": "0.2.0"
+  },
+  "swiftui-calculator": {
+    "buildVersion": "3",
+    "bundleIdentifier": "com.c12n.calculator",
+    "minOSVersion": "17.0",
+    "name": "Calculator",
+    "tag": "v1.1.1",
+    "version": "1.1.1"
+  },
+  "taptapphoenix": {
+    "buildVersion": "0.4.0",
+    "bundleIdentifier": "com.c12n.taptapphoenix",
+    "minOSVersion": "15.0",
+    "name": "Tap Tap Phoenix",
+    "tag": "v0.4.0",
+    "version": "0.4.0"
+  },
+  "tether": {
+    "buildVersion": "7",
+    "bundleIdentifier": "com.c12n.tether",
+    "minOSVersion": "17.0",
+    "name": "Tether",
+    "tag": "v1.0.0",
+    "version": "1.0"
+  },
+  "viu-live-tv": {
+    "buildVersion": "9",
+    "bundleIdentifier": "com.c12n.viulivetv",
+    "minOSVersion": "17.0",
+    "name": "Viu Live TV",
+    "tag": "v1.3.1",
+    "version": "1.3.1"
+  }
+}
