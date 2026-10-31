@@ -1,0 +1,52 @@
+name: Update AltStore source
+
+# Keeps source.json / apps.json in sync with the latest GitHub Releases of
+# every c12n app listed in apps_config.json. Runs hourly, on demand, and on
+# pushes that touch the config or generator.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "apps_config.json"
+      - "scripts/generate_source.py"
+      - "metadata_cache.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-source
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow (for IPA icon extraction)
+        run: pip install pillow
+
+      - name: Regenerate source
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_source.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- source.json apps.json metadata_cache.json icons; then
+            echo "Source already up to date."
+            exit 0
+          fi
+          git config user.name "c12n Source Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add source.json apps.json metadata_cache.json icons
+          git commit -m "Auto-update source from latest GitHub releases"
+          git push
