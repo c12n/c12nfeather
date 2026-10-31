@@ -1,0 +1,477 @@
+{
+  "name": "c12n Apps",
+  "identifier": "com.c12n.apps.source",
+  "subtitle": "Every c12n iOS app, always up to date",
+  "description": "The official AltStore / Feather source for c12n Apps. Every app here is built by c12n Apps and published on GitHub. This source updates itself automatically: when a new version of any app is released on GitHub, it appears here within the hour — no manual steps.\n\nAll IPAs are unsigned sideload builds. Install them with Feather or AltStore using your own certificate / Apple ID.\n\nCopyright (c) 2026 c12n Apps",
+  "iconURL": "https://c12nfeather.07051969.xyz/icons/source-icon.png",
+  "headerURL": "",
+  "website": "https://c12nfeather.07051969.xyz",
+  "tintColor": "#0F766E",
+  "featuredApps": [
+    "com.c12n.viulivetv",
+    "com.c12n.matchamusic",
+    "com.c12n.taptapphoenix",
+    "com.c12n.retrophone",
+    "com.j0shua.S5LBox",
+    "com.c12n.tether",
+    "com.c12n.calculator",
+    "com.c12n.fastfetch"
+  ],
+  "apps": [
+    {
+      "name": "Viu Live TV",
+      "bundleIdentifier": "com.c12n.viulivetv",
+      "developerName": "c12n Apps",
+      "subtitle": "Live TV from Viu, natively on iOS",
+      "localizedDescription": "An unofficial native iOS live TV client for Viu members. Sign in once and watch live channels with the native player — AirPlay, Picture in Picture, external player options, favourites with hearts, per-channel language badges and a language filter, Kids and Sports modes, and parental controls. Liquid Glass interface with Dynamic Type for readability, in System, Light or Dark appearance.\n\nRequires a Viu account. Live TV only.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/viu-live-tv.png",
+      "tintColor": "#F5C518",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "1.3.1",
+          "buildVersion": "9",
+          "date": "2026-10-29T05:59:58Z",
+          "localizedDescription": "Readability, language badges and a proper Appearance control.\r\n\r\n- **Bigger, easier-to-read rows** — channel names, the current programme and the \"Next\" line are all larger and now scale with the iOS text-size setting. Category chips and favorite buttons are bigger too.\r\n- **Language badge on every channel** — a small marker (EN, FR, AR, ES, …) sits right after the channel name, detected from the name's script, well-known networks, language words and country.\r\n- **Settings → Language** — filter the whole guide to a single language (English only, French only, Arabic only, …) with per-language channel counts. Default stays All Languages.\r\n- **Appearance** — the System / Light / Dark setting in Settings → Appearance is now a clear segmented control, like the AlRashid app's.\r\n- **Scrolling fix** — the sideways swipe that kept switching categories while scrolling the channel list (and made scrolling feel broken) is removed. Categories now switch by tapping the chips at the top.",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.3.1/ViuLiveTV.ipa",
+          "size": 3323837,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.3.0",
+          "buildVersion": "1.3.0",
+          "date": "2026-10-28T00:30:35Z",
+          "localizedDescription": "Chromecast arrives — plus the PIN screen redesign.\r\n\r\n**Chromecast (new)**\r\n- Cast any channel to a Chromecast or Android TV on your Wi-Fi: tap the cast button next to Guide in the player, pick your TV, and the channel plays on the big screen (the app speaks the Cast protocol directly — no extra SDK)\r\n- While casting, the player screen shows what's casting with Play/Pause and Stop Casting, and switching channels in the Guide sends the new channel to the TV\r\n- AirPlay works exactly as before, from the native player's own controls\r\n\r\n**PIN screen (from the unreleased 1.2.3, included here)**\r\n- Restyled after the iOS passcode screen: black background, outlined dots that fill in as you type, big round glass keys with the classic letter groups under the numbers\r\n- No Emergency text — bottom-left is \"Forgot PIN?\", bottom-right is Cancel\r\n- The parental PIN has a factory default of 0000 — you're asked to set your own when you turn Parental Controls or Kids Mode on. Uninstalling/reinstalling, or signing out and back in, resets the PIN to 0000\r\n- Forgot PIN: tap \"Forgot PIN?\" and a 6-digit reset code is emailed to the address used for your Viu account (prepared in your Mail app — you just tap Send, since a standalone app has no mail server). Enter the code within 10 minutes and the PIN resets to 0000",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.3.0/ViuLiveTV.ipa",
+          "size": 3310938,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.2.2",
+          "buildVersion": "1.2.2",
+          "date": "2026-10-27T07:16:46Z",
+          "localizedDescription": "Parental controls, Kids & Sports modes, accent colors with matching app icons, and player polish.\r\n\r\n**Parental Controls (Settings, off by default)**\r\n- Create a 4-digit PIN and lock any channels you choose — locked channels show a small lock icon next to their name in the channel list, Favorites, and search results, and tapping one brings up the PIN screen before it can play (same for the channel guide and external players)\r\n- Kids Mode (same section): the whole app shows only the Kids category, Favorites included. A PIN is only needed to turn Kids Mode OFF — if no PIN exists yet, you create one when you turn it on\r\n- Turning Parental Controls off also asks for the PIN. Forgot it? Sign out and sign back in to reset\r\n\r\n**Sports Mode (Settings, off by default, no PIN)**\r\n- Shows only sports categories (Sports, Hockey, ESPN+, TSN+ and similar); the \"All\" view becomes all sports channels\r\n\r\n**Accent color (Settings → Appearance)**\r\n- Pick red (default), blue, purple, pink, orange, green or teal — colors chosen to stay visible in Light and Dark mode\r\n- The color applies across the app (tab bar, category chips, LIVE badge, progress bars, buttons) AND changes the VIU letters on the app icon to match\r\n\r\n**Player polish**\r\n- The Guide button now sits lower so it no longer overlaps the player's top controls — AirPlay, PiP, volume and play/pause stay visible when controls are shown\r\n- Background Play and Picture in Picture toggles in Settings → Playback\r\n\r\n**Settings & lists**\r\n- Haptic Feedback toggle (Settings → Appearance)\r\n- Clear Cache now shows how much data the app has used\r\n- Clear Favorites button (removes favorites on this device and on the website)\r\n- Favorites use a heart icon everywhere now (the doubled star icon is fixed), and category chips no longer show on the Favorites tab\r\n- Swipe left/right across the channel list to move between categories (note: because of this, the favorite swipe is now tap-to-confirm — swipe a row and tap the heart button; a full swipe no longer favorites directly)\r\n- Liquid Glass styling on category chips and the sign-in / renew buttons\r\n\r\nOne thing that couldn't change: the seek bar's size is set by iOS's own player controls, so it can't be made smaller — keeping the native controls is also what keeps AirPlay, PiP, volume and play/pause visible.",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.2.2/ViuLiveTV.ipa",
+          "size": 3246883,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.2.1",
+          "buildVersion": "1.2.1",
+          "date": "2026-10-27T06:20:25Z",
+          "localizedDescription": "## What's new in v1.2.1\r\n\r\n**Video-only player**\r\n- The player screen is now only the video: no channel name, no LIVE badge, no permanent on-screen buttons. A single auto-hiding **Guide** button (tap the video to reveal it) opens the full channel guide as a sheet in portrait and landscape — pick a channel and playback switches in place.\r\n- **No more restarts on rotation**: the layout is chosen by device (iPhone / iPad), not by size class, so rotating mid-stream never rebuilds or restarts playback.\r\n- **Gestures**: double-tap the video to pause / resume; swipe right from the left edge to go back to the channel list.\r\n- **Haptics** on channel taps, category chips, favorites and player gestures.\r\n\r\n**Background play + Picture in Picture**\r\n- Audio keeps playing with the screen locked or the app in the background, with Now Playing info and lock-screen / Control Centre play-pause controls.\r\n- PiP, including automatic PiP when leaving the app mid-stream.\r\n\r\n**Tap to play, fixed**\r\n- Tapping a channel now plays it immediately (previously only the long-press menu's Play worked — the favorite star inside the navigation link was swallowing row taps).\r\n\r\n**Favorites sync**\r\n- Favorites now sync two-way with your account on the server — the same list the Viu website shows. They persist through app updates, and even after a reinstall, signing in brings them back.\r\n\r\n**Categories, your way**\r\n- **Hide categories** you don't watch in Settings → Channel Categories.\r\n- **Rearrange**: long-press a category in the channel list and drag it into your preferred order (drop on \"All\" for the front, or at the end for last). Your order is saved.\r\n\r\n**VIP subscription gate**\r\n- The app now requires an active VIP subscription. Signing in with a non-active account shows a **\"Non-VIP Found\"** screen with the account status, a **Renew or Purchase** button to the official member website (viu.to), and a re-check button for after you've renewed.\r\n\r\n**Settings**\r\n- New Data section: **Clear Cache** (fresh channel-guide download) and **Restore Defaults** (all categories shown again, order reset — favorites untouched).\r\n- New app icon: block red VIU letters with a Liquid Glass effect (Dark + Tinted variants included).\r\n\r\n**Install**: unsigned IPA — sideload with AltStore, SideStore, Sideloadly or a similar tool using your own Apple ID.\r\n\r\nViuLiveTV.ipa — size and SHA-256 are listed on the release assets after upload.\r\n\r\nMIT License — Copyright (c) 2026 c12n Apps.",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.2.1/ViuLiveTV.ipa",
+          "size": 728902,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.2.0",
+          "buildVersion": "1.2.0",
+          "date": "2026-10-27T05:13:28Z",
+          "localizedDescription": "## What's new\r\n\r\n- **Native playback, fixed and proven** — the long-press **Play** button on iPhone previously did nothing (it only worked in the iPad layout); navigation is now path-driven so Play and row taps both open the player. The player also sends the client user-agent IPTV services expect, retries once with a fresh stream link if a stream fails, and — if it still can't play — shows the actual error with Try Again / Open in External Player instead of a silent black screen.\r\n- **Much faster channel loading** — the guide now loads from a single all-channels feed (one request instead of 72; categories are read from each channel's own tags) and is **cached on disk**, so launches after the first show your channels instantly while refreshing in the background.\r\n- **Swipe right to favorite / unfavorite** — full-swipe or tap the action on any channel row.\r\n- Category chips no longer appear over the sample list while real data loads.\r\n\r\n### Playback test (new)\r\nThe CI simulator test now includes a real end-to-end playback stage: it signs in with a live account token (provided via a temporary secret, deleted after the run), loads the real guide, and plays a channel in the native AVPlayer on a virtual iPhone running iOS 26. In this build's run it played the NHL / Edmonton Oilers channel (stream 4626) successfully — screenshots in the run artifacts show the decoded stream with the app's LIVE badge and AirPlay button overlaid. The streams themselves are standard HLS (H.264 + AAC), verified at the segment level.\r\n\r\n### Download\r\n- ViuLiveTV.ipa — 384,983 bytes\r\n- SHA-256: a28c57e43b9909e69d5b3f525c4e2715bef72df66a90ed7e4368f8310cc8990e\r\n- Bundle ID: com.c12n.viulivetv, Version 1.2.0 (4)\r\n\r\nThe IPA is unsigned — sideload it with AltStore, SideStore, Sideloadly or a similar tool using your own Apple ID.\r\n\r\n### Tested\r\nBuilt by GitHub Actions (Build IPA Run #14) and verified on a virtual iPhone running iOS 26 (Simulator Test Run #13), including the live playback stage above.\r\n\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.2.0/ViuLiveTV.ipa",
+          "size": 384983,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.1.0",
+          "buildVersion": "1.1.0",
+          "date": "2026-10-27T03:19:23Z",
+          "localizedDescription": "## What's new\r\n\r\n- **YouTube-style tab bar** — a floating glass pill at the bottom of the channel list with Channels / Favorites / Settings, the selected tab highlighted, replacing the old segmented control and toolbar gear (iPhone). No more big empty header gap.\r\n- **Live TV categories** — a scrollable chip row under the title with the categories from your Viu account (Hot Right Now, Hockey, Canada, USA, UK, News, Kids, Sports, ESPN Plus, TSN Plus, and 60+ more). Tap one to filter the channel list to just that category.\r\n- **More compact everywhere** — smaller channel rows (42pt logos, tighter type and padding), tighter list spacing, inline title.\r\n- **Name cleanup** — channel and programme names now decode HTML entities from the feed (\"A&amp;E\" shows as \"A&E\").\r\n\r\n### Download\r\n- ViuLiveTV.ipa — 354,524 bytes\r\n- SHA-256: b65621207e70943883308a91d9c808a009ddc2bb2ddee8da0c886c9abf46030e\r\n- Bundle ID: com.c12n.viulivetv, Version 1.1.0 (3)\r\n\r\nThe IPA is unsigned — sideload it with AltStore, SideStore, Sideloadly or a similar tool using your own Apple ID.\r\n\r\n### Tested\r\nBuilt by GitHub Actions (Build IPA Run #9) and launched successfully on a virtual iPhone running iOS 26 in the Simulator (Run #8). The live API was verified end-to-end against a real account: sign-in, all 72 categories, 1,145 channels, and standard HLS live links.\r\n\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.1.0/ViuLiveTV.ipa",
+          "size": 354524,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.1",
+          "buildVersion": "1.0.1",
+          "date": "2026-10-27T02:40:25Z",
+          "localizedDescription": "## What's fixed\r\n\r\nThe channel list never loaded on a real device in v1.0.0 — the app silently stayed on the sample channels. This release reworks channel loading:\r\n\r\n- Per-category (tag) channel lists are now fetched in parallel instead of one-by-one (the sequential pass could spin for minutes)\r\n- Requests now match the Android app byte-for-byte: raw URLs, User-Agent only, no extra Accept header\r\n- A UTF-8 BOM in server responses is stripped before decoding (Android tolerates it, iOS did not)\r\n- Session expiry is detected: if Viu revoked the sign-in (which happens when the account signs in on the website or another device), the app now says so and offers one-tap sign out / sign in, and validates the stored session on launch\r\n- Failures are no longer silent: the exact server answer is recorded and shown under Settings → Channel Loading Diagnostics, with a shareable report\r\n\r\n### Download\r\n- ViuLiveTV.ipa — 332,892 bytes\r\n- SHA-256: b202e91cfdd0131ac7261d5a8a3d3fc7ce5a4490347e6eff7de6c43c433a0065\r\n- Bundle ID: com.c12n.viulivetv, Version 1.0.1 (2)\r\n\r\nThe IPA is unsigned — sideload it with AltStore, SideStore, Sideloadly or a similar tool using your own Apple ID.\r\n\r\n### Tested\r\nBuilt by GitHub Actions (Build IPA Run #5) and launched successfully on a virtual iPhone running iOS 26 in the Simulator (Run #4).\r\n\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.0.1/ViuLiveTV.ipa",
+          "size": 332892,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.0",
+          "date": "2026-10-27T02:09:34Z",
+          "localizedDescription": "## Viu Live TV for iOS\r\n\r\nNative SwiftUI Live TV app for Viu (api.viu.rs), built from the Viu Android app as reference — Live TV only.\r\n\r\n### Highlights\r\n- First-boot Viu login (token in Keychain), then Channels + Favorites as the first screen\r\n- Native AVPlayer with AirPlay and Picture in Picture, plus external players (VLC, Infuse, OutPlayer, nPlayer)\r\n- Liquid Glass UI on iOS 26 with iOS 17 fallback, dynamic Light / Dark Mode\r\n- Portrait + landscape, iPad split-view UI, minimum iOS 17.0\r\n\r\n### Download\r\n- ViuLiveTV.ipa — 301,317 bytes\r\n- SHA-256: 165e1ab5fce57e6cd6fa10af218bad3037fa2dae344eba09578426834301ce3d\r\n- Bundle ID: com.c12n.viulivetv, Version 1.0.0 (1)\r\n\r\nThe IPA is unsigned — sideload it with AltStore, SideStore, Sideloadly or a similar tool using your own Apple ID.\r\n\r\n### Tested\r\nBuilt by GitHub Actions (Build IPA Run #4, macos-26 / Xcode 26) and launched successfully on a virtual iPhone 17 Pro running iOS 26.5 in the iOS Simulator — first-boot login screen verified in Light and Dark Mode.\r\n\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.0.0/ViuLiveTV.ipa",
+          "size": 301317,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "version": "1.3.1",
+      "versionDate": "2026-10-29T05:59:58Z",
+      "versionDescription": "Readability, language badges and a proper Appearance control.\r\n\r\n- **Bigger, easier-to-read rows** — channel names, the current programme and the \"Next\" line are all larger and now scale with the iOS text-size setting. Category chips and favorite buttons are bigger too.\r\n- **Language badge on every channel** — a small marker (EN, FR, AR, ES, …) sits right after the channel name, detected from the name's script, well-known networks, language words and country.\r\n- **Settings → Language** — filter the whole guide to a single language (English only, French only, Arabic only, …) with per-language channel counts. Default stays All Languages.\r\n- **Appearance** — the System / Light / Dark setting in Settings → Appearance is now a clear segmented control, like the AlRashid app's.\r\n- **Scrolling fix** — the sideways swipe that kept switching categories while scrolling the channel list (and made scrolling feel broken) is removed. Categories now switch by tapping the chips at the top.",
+      "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.3.1/ViuLiveTV.ipa",
+      "size": 3323837,
+      "minOSVersion": "17.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Matcha Music",
+      "bundleIdentifier": "com.c12n.matchamusic",
+      "developerName": "c12n Apps",
+      "subtitle": "Your music servers and library, one player",
+      "localizedDescription": "A multi-server music player for iOS. Connect Subsonic / Navidrome, Jellyfin or Plex servers, or play your on-device library and files imported from the Files app. Downloads for offline listening, Spotify playlist import, synced lyrics via LRCLIB, widgets, Siri shortcuts, an equalizer and sleep timer, genre and decade browsing, Song Radio, and ListenBrainz scrobbling.\n\nA c12n rebuild of MatchaMusic, originally by Raiden Brundin.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/matcha-music.png",
+      "tintColor": "#7FB069",
+      "category": "music",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1",
+          "date": "2026-10-30T02:25:19Z",
+          "localizedDescription": "Matcha Music v1.0.0 (build 1) — c12n rebuild of the multi-server music player (Subsonic/Navidrome, Jellyfin, Plex, on-device library), bundle com.c12n.matchamusic. Built from commit 303195c. Note: this unsigned IPA is for sideloading; the signed TestFlight build follows separately.",
+          "downloadURL": "https://github.com/c12n/matcha-music/releases/download/v1.0.0/MatchaMusic-v1.0.0.ipa",
+          "size": 861272,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "version": "1.0.0",
+      "versionDate": "2026-10-30T02:25:19Z",
+      "versionDescription": "Matcha Music v1.0.0 (build 1) — c12n rebuild of the multi-server music player (Subsonic/Navidrome, Jellyfin, Plex, on-device library), bundle com.c12n.matchamusic. Built from commit 303195c. Note: this unsigned IPA is for sideloading; the signed TestFlight build follows separately.",
+      "downloadURL": "https://github.com/c12n/matcha-music/releases/download/v1.0.0/MatchaMusic-v1.0.0.ipa",
+      "size": 861272,
+      "minOSVersion": "17.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Tap Tap Phoenix",
+      "bundleIdentifier": "com.c12n.taptapphoenix",
+      "developerName": "c12n Apps",
+      "subtitle": "The rhythm game, remade for modern iOS",
+      "localizedDescription": "Tap Tap Phoenix remade for iOS 26 / 27 by c12n Apps, with the original credits kept. Tap the orbs in time with the music across the full song catalogue — including the hidden track 'Legend ft Backchat' by Jaroslav Beck and custom songs. Online accounts and leaderboards are revived on a c12n server, with an accessibility pack: wider Perfect / Great timing windows, high-contrast orbs, a No Fail practice mode and a song progress bar.\n\nRemade for modern iOS by c12n Apps with ❤️ from Canada.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/taptapphoenix.png",
+      "tintColor": "#FF6B35",
+      "category": "games",
+      "versions": [
+        {
+          "version": "0.4.0",
+          "buildVersion": "0.4.0",
+          "date": "2026-10-31T03:57:47Z",
+          "localizedDescription": "Tap Tap Phoenix v0.4.0 — remade for modern iOS by c12n Apps.\n\nNew in this build:\n- A hidden 24th song unlocked: \"Legend ft Backchat\" by Jaroslav Beck (Easy) — its audio and chart were inside the game all along, but the original developers never added it to the catalog\n- No Fail practice mode: a new Options toggle. Misses still show, but they no longer reset your combo or multiplier, and No Fail runs are not registered on the leaderboard\n- A progress bar under the in-song HUD shows how far through the song you are\n- Server side: leaderboard scores are now capped at each chart's true maximum, so forged scores are rejected\n\nFrom v0.4.0:\n- Safe-area fix: the in-song HUD (multiplier, score/MISS, combo) and the end-of-song stats readout now sit clear of the notch and Dynamic Island on devices without a home button\n- The song list now shows each track's length on the right of its row\n\nFrom v0.2.0:\n- Accounts and the online leaderboard work again — the original server is gone, so the game now talks to a c12n-hosted revival of the same endpoints\n- Accessibility pack: more forgiving hit timing (Perfect and Great windows roughly doubled) and high-contrast notes — white-ringed orbs on darkened backgrounds\n\n- arm64-only build, minimum iOS 15.0, privacy manifest included\n- original credits kept, with a c12n Apps line added at the bottom\n- unsigned sideload IPA — sign it with Feather, SignLab, AltStore or your tool of choice",
+          "downloadURL": "https://github.com/c12n/taptapphoenix/releases/download/v0.4.0/TapTapPhoenix-c12n-0.4.0.ipa",
+          "size": 329094199,
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.3.1",
+          "buildVersion": "0.3.1",
+          "date": "2026-10-31T03:39:25Z",
+          "localizedDescription": "Tap Tap Phoenix v0.3.1 — remade for modern iOS by c12n Apps.\n\nNew in this build:\n- Safe-area fix: the in-song HUD (multiplier, score/MISS, combo) and the end-of-song stats readout now sit clear of the notch and Dynamic Island on devices without a home button\n- The song list now shows each track's length on the right of its row\n- (v0.3.0 crashed on launch — it recompiled the game's startup script, which this 2020 GameMaker VM doesn't tolerate. v0.3.1 leaves that script untouched and builds the length table inside the menu code instead.)\n\nFrom v0.2.0:\n- Accounts and the online leaderboard work again — the original server is gone, so the game now talks to a c12n-hosted revival of the same endpoints\n- Accessibility pack: more forgiving hit timing (Perfect and Great windows roughly doubled) and high-contrast notes — white-ringed orbs on darkened backgrounds\n\n- arm64-only build, minimum iOS 15.0, privacy manifest included\n- original credits kept, with a c12n Apps line added at the bottom\n- unsigned sideload IPA — sign it with Feather, SignLab, AltStore or your tool of choice",
+          "downloadURL": "https://github.com/c12n/taptapphoenix/releases/download/v0.3.1/TapTapPhoenix-c12n-0.3.1.ipa",
+          "size": 329093764,
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.2.0",
+          "buildVersion": "0.2.0",
+          "date": "2026-10-31T03:12:59Z",
+          "localizedDescription": "Tap Tap Phoenix v0.2.0 — remade for modern iOS by c12n Apps.\n\nNew in this build:\n- Accounts and the online leaderboard work again — the original server is gone, so the game now talks to a c12n-hosted revival of the same endpoints\n- Accessibility pack: more forgiving hit timing (Perfect and Great windows roughly doubled) and high-contrast notes — white-ringed orbs on darkened backgrounds\n\n- arm64-only build, minimum iOS 15.0, privacy manifest included\n- original credits kept, with a c12n Apps line added at the bottom\n- unsigned sideload IPA — sign it with Feather, SignLab, AltStore or your tool of choice",
+          "downloadURL": "https://github.com/c12n/taptapphoenix/releases/download/v0.2.0/TapTapPhoenix-c12n-0.2.0.ipa",
+          "size": 329093933,
+          "minOSVersion": "15.0"
+        },
+        {
+          "version": "0.1.0",
+          "buildVersion": "0.1.0",
+          "date": "2026-10-31T00:35:10Z",
+          "localizedDescription": "Tap Tap Phoenix remade for modern iOS by c12n Apps.\n\n- arm64-only build, minimum iOS 15.0, privacy manifest included\n- original credits kept, with a c12n Apps line added at the bottom\n- unsigned sideload IPA — sign it with Feather, SignLab, AltStore or your tool of choice",
+          "downloadURL": "https://github.com/c12n/taptapphoenix/releases/download/v0.1.0/TapTapPhoenix-c12n-0.1.0.ipa",
+          "size": 327944502,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "version": "0.4.0",
+      "versionDate": "2026-10-31T03:57:47Z",
+      "versionDescription": "Tap Tap Phoenix v0.4.0 — remade for modern iOS by c12n Apps.\n\nNew in this build:\n- A hidden 24th song unlocked: \"Legend ft Backchat\" by Jaroslav Beck (Easy) — its audio and chart were inside the game all along, but the original developers never added it to the catalog\n- No Fail practice mode: a new Options toggle. Misses still show, but they no longer reset your combo or multiplier, and No Fail runs are not registered on the leaderboard\n- A progress bar under the in-song HUD shows how far through the song you are\n- Server side: leaderboard scores are now capped at each chart's true maximum, so forged scores are rejected\n\nFrom v0.4.0:\n- Safe-area fix: the in-song HUD (multiplier, score/MISS, combo) and the end-of-song stats readout now sit clear of the notch and Dynamic Island on devices without a home button\n- The song list now shows each track's length on the right of its row\n\nFrom v0.2.0:\n- Accounts and the online leaderboard work again — the original server is gone, so the game now talks to a c12n-hosted revival of the same endpoints\n- Accessibility pack: more forgiving hit timing (Perfect and Great windows roughly doubled) and high-contrast notes — white-ringed orbs on darkened backgrounds\n\n- arm64-only build, minimum iOS 15.0, privacy manifest included\n- original credits kept, with a c12n Apps line added at the bottom\n- unsigned sideload IPA — sign it with Feather, SignLab, AltStore or your tool of choice",
+      "downloadURL": "https://github.com/c12n/taptapphoenix/releases/download/v0.4.0/TapTapPhoenix-c12n-0.4.0.ipa",
+      "size": 329094199,
+      "minOSVersion": "15.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "RetroPhone",
+      "bundleIdentifier": "com.c12n.retrophone",
+      "developerName": "c12n Apps",
+      "subtitle": "iPhone OS 3.1.3 and iOS 4.2.1, emulated",
+      "localizedDescription": "RetroPhone runs real iPhone OS 3.1.3 and iOS 4.2.1 on modern iPhones using the S5LBox full-system emulator. Firmware downloads automatically from Apple with SHA-256 verification and imports itself — or import an IPSW from Files. Create machines, boot them, and watch live scanout diagnostics.\n\nNote: the emulated display is a work in progress — the guest system boots, but the compositor may not draw yet on some builds.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/retrophone.png",
+      "tintColor": "#3B82F6",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "0.2.0",
+          "buildVersion": "2",
+          "date": "2026-10-30T04:08:07Z",
+          "localizedDescription": "RetroPhone v0.2.0 — automatic firmware downloads.\r\n\r\nNew in this version: pick iPhone OS 3.1.3 (7E18) or iOS 4.2.1 (8C148) in the import screen and RetroPhone downloads the IPSW straight from Apple's servers (secure-appldnld.apple.com — the same hosts Finder/iTunes restore from), with a progress bar and cancel. The download is verified against the known-good SHA-256 digest and then imported automatically; the IPSW file is deleted after import so it doesn't sit on your storage. Importing an IPSW file you already have still works as before.\r\n\r\nVerified end-to-end in the iOS 26 Simulator: starting from an empty install, the app downloaded iOS 4.2.1 from Apple itself, verified and imported it, created a machine and booted it (kernel running, root on /dev/md0).\r\n\r\nKnown issue (unchanged from v0.1.0): the guest boots fully but its compositor does not draw yet, so the emulated screen currently stays black while the system runs underneath. The fault is under active investigation.\r\n\r\nNo guest networking or audio yet. No firmware is bundled with the app.\r\n\r\nCopyright (c) 2026 c12n Apps. The emulation engine is vendored from the S5LBox project under the MIT license (see Engine/UPSTREAM-LICENSE in the repo).",
+          "downloadURL": "https://github.com/c12n/retrophone/releases/download/v0.2.0/RetroPhone.ipa",
+          "size": 1765194,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "0.1.0",
+          "buildVersion": "0.1.0",
+          "date": "2026-10-30T03:10:41Z",
+          "localizedDescription": "RetroPhone v0.1.0 — first release.\r\n\r\nA c12n app that runs iPhone OS 3.1.3 and iOS 4.2.1 on modern iPhones, emulating the iPhone 3G's S5L8900 hardware. Bring your own iPhone1,2 IPSW (3.1.3 7E18 or 4.2.1 8C148); the app extracts and verifies the firmware, creates machines with writable disks, and boots them with touch and Home/Power controls, a guest serial console, and live display diagnostics.\r\n\r\nVerified in this build: the iOS 4.2.1 kernel boots to a running system (root on /dev/md0) in the iOS 26 Simulator at ~20-35 M instructions/s, with the guest's display controller enabled and scanning out.\r\n\r\nKnown issue: the guest boots fully but its compositor does not draw yet, so the emulated screen currently stays black while the system runs underneath. The display output path is proven (the guest enables scanout and writes its framebuffer during early boot, then stops); the fault is under active investigation.\r\n\r\nNo guest networking or audio yet. No firmware is bundled with the app.\r\n\r\nCopyright (c) 2026 c12n Apps. The emulation engine is vendored from the S5LBox project under the MIT license (see Engine/UPSTREAM-LICENSE in the repo).",
+          "downloadURL": "https://github.com/c12n/retrophone/releases/download/v0.1.0/RetroPhone.ipa",
+          "size": 1735040,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "version": "0.2.0",
+      "versionDate": "2026-10-30T04:08:07Z",
+      "versionDescription": "RetroPhone v0.2.0 — automatic firmware downloads.\r\n\r\nNew in this version: pick iPhone OS 3.1.3 (7E18) or iOS 4.2.1 (8C148) in the import screen and RetroPhone downloads the IPSW straight from Apple's servers (secure-appldnld.apple.com — the same hosts Finder/iTunes restore from), with a progress bar and cancel. The download is verified against the known-good SHA-256 digest and then imported automatically; the IPSW file is deleted after import so it doesn't sit on your storage. Importing an IPSW file you already have still works as before.\r\n\r\nVerified end-to-end in the iOS 26 Simulator: starting from an empty install, the app downloaded iOS 4.2.1 from Apple itself, verified and imported it, created a machine and booted it (kernel running, root on /dev/md0).\r\n\r\nKnown issue (unchanged from v0.1.0): the guest boots fully but its compositor does not draw yet, so the emulated screen currently stays black while the system runs underneath. The fault is under active investigation.\r\n\r\nNo guest networking or audio yet. No firmware is bundled with the app.\r\n\r\nCopyright (c) 2026 c12n Apps. The emulation engine is vendored from the S5LBox project under the MIT license (see Engine/UPSTREAM-LICENSE in the repo).",
+      "downloadURL": "https://github.com/c12n/retrophone/releases/download/v0.2.0/RetroPhone.ipa",
+      "size": 1765194,
+      "minOSVersion": "17.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "S5LBox",
+      "bundleIdentifier": "com.j0shua.S5LBox",
+      "developerName": "c12n Apps",
+      "subtitle": "Boot real iPhone OS 3 / iOS 4 in an app",
+      "localizedDescription": "S5LBox boots Apple's actual kernel, launchd and SpringBoard from iPhone OS 3 and iOS 4.2.1 inside an app on a modern iPhone. A from-scratch, full-system S5L8900 / ARMv6 emulator in portable C.\n\nThis is the standalone emulator build; RetroPhone is the c12n app built on the same core.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/S5LBox.png",
+      "tintColor": "#6B7280",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "buildVersion": "2",
+          "date": "2026-10-29T22:12:00Z",
+          "localizedDescription": "Combines the three changes the on-device evidence now supports, each proven separately:\r\n\r\n1. The v6 memory-disk bridge fix: the 4.2.1 kernel's root-device registration call is accepted, so the guest no longer halts before mounting its root disk.\r\n2. The PowerVR MBX nub stays un-matched on 4.2.1 (restored from v5): with it matched, an on-device run wedged before launchd with every stall sample inside the AppleMBXController status poll (0x804b2940-0x804b297f) — that driver waits for a completion this emulator only models for iPhone OS 3.1.3. Rendering uses the provisioned CPU software path.\r\n3. No CPU engine is forced (kept from v7): engine selection is the default compact engine again; the v4 interpreter forcing was a response to the same halt the bridge fix resolved.\r\n\r\nBuild: commit 5d3bc06. Unsigned sideload IPA, bundle com.j0shua.S5LBox, version 1.1.0 (2).",
+          "downloadURL": "https://github.com/c12n/S5LBox/releases/download/ios4-421-v8/S5LBox.ipa",
+          "size": 2538529,
+          "minOSVersion": "13.0"
+        }
+      ],
+      "version": "1.1.0",
+      "versionDate": "2026-10-29T22:12:00Z",
+      "versionDescription": "Combines the three changes the on-device evidence now supports, each proven separately:\r\n\r\n1. The v6 memory-disk bridge fix: the 4.2.1 kernel's root-device registration call is accepted, so the guest no longer halts before mounting its root disk.\r\n2. The PowerVR MBX nub stays un-matched on 4.2.1 (restored from v5): with it matched, an on-device run wedged before launchd with every stall sample inside the AppleMBXController status poll (0x804b2940-0x804b297f) — that driver waits for a completion this emulator only models for iPhone OS 3.1.3. Rendering uses the provisioned CPU software path.\r\n3. No CPU engine is forced (kept from v7): engine selection is the default compact engine again; the v4 interpreter forcing was a response to the same halt the bridge fix resolved.\r\n\r\nBuild: commit 5d3bc06. Unsigned sideload IPA, bundle com.j0shua.S5LBox, version 1.1.0 (2).",
+      "downloadURL": "https://github.com/c12n/S5LBox/releases/download/ios4-421-v8/S5LBox.ipa",
+      "size": 2538529,
+      "minOSVersion": "13.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Tether",
+      "bundleIdentifier": "com.c12n.tether",
+      "developerName": "c12n Apps",
+      "subtitle": "Share your iPhone internet over WireGuard",
+      "localizedDescription": "Share your iPhone's internet connection with an iPad, Mac or travel router over WireGuard — even when your carrier plan blocks the built-in hotspot.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/tether.png",
+      "tintColor": "#0EA5E9",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "1.0",
+          "buildVersion": "7",
+          "date": "2026-10-28T17:23:23Z",
+          "localizedDescription": "Unsigned sideload build of Tether. Sign and install with SideStore, AltStore, or your usual sideloading tool.\r\n\r\n- **App:** Tether 1.0 (build 7)\r\n- **Bundle ID:** com.c12n.tether\r\n- **Requires:** iOS 17.0 or later\r\n- **IPA size:** 3,325,551 bytes\r\n- **SHA-256:** 00cfe70ca0007fcaa8be3a7cbc279f5d43ff0971830e6f03e98b7917103b9c6a\r\n\r\n## Upstream\r\n\r\nSource: https://github.com/viktor-svirsky/tether (main @ e3ae272d5579197965b02b98364d332348081f2b)\r\nLicense: MIT — Copyright (c) 2026 Viktor Svirsky (see LICENSE in this repo)\r\n\r\nTether shares your iPhone's internet with an iPad, Mac or travel router over WireGuard, even when your plan blocks hotspot.",
+          "downloadURL": "https://github.com/c12n/tether/releases/download/v1.0.0/Tether.ipa",
+          "size": 3325551,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "version": "1.0",
+      "versionDate": "2026-10-28T17:23:23Z",
+      "versionDescription": "Unsigned sideload build of Tether. Sign and install with SideStore, AltStore, or your usual sideloading tool.\r\n\r\n- **App:** Tether 1.0 (build 7)\r\n- **Bundle ID:** com.c12n.tether\r\n- **Requires:** iOS 17.0 or later\r\n- **IPA size:** 3,325,551 bytes\r\n- **SHA-256:** 00cfe70ca0007fcaa8be3a7cbc279f5d43ff0971830e6f03e98b7917103b9c6a\r\n\r\n## Upstream\r\n\r\nSource: https://github.com/viktor-svirsky/tether (main @ e3ae272d5579197965b02b98364d332348081f2b)\r\nLicense: MIT — Copyright (c) 2026 Viktor Svirsky (see LICENSE in this repo)\r\n\r\nTether shares your iPhone's internet with an iPad, Mac or travel router over WireGuard, even when your plan blocks hotspot.",
+      "downloadURL": "https://github.com/c12n/tether/releases/download/v1.0.0/Tether.ipa",
+      "size": 3325551,
+      "minOSVersion": "17.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Calculator",
+      "bundleIdentifier": "com.c12n.calculator",
+      "developerName": "c12n Apps",
+      "subtitle": "A modern SwiftUI calculator",
+      "localizedDescription": "A modern calculator for iOS 17+ with calculation history, haptics, a unit converter, a colour picker, changeable app icons and a Duo UI. Clean, fast, and private — everything stays on your device.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/swiftui-calculator.png",
+      "tintColor": "#FF9500",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "1.1.1",
+          "buildVersion": "3",
+          "date": "2026-10-26T21:57:34Z",
+          "localizedDescription": "## SwiftUI Calculator v1.1.1\r\n\r\nThe full 1.1 feature release, with Claude's review fixes folded in (this supersedes the planned 1.1.0 — there is no separate 1.1.0 release).\r\n\r\n### New in 1.1\r\n- **Math history** — every \"=\" result is saved (persisted, latest first, up to 100). History records the full chained expression (e.g. \"2 + 3 × 4\"), tap an entry to reuse its exact value, swipe to delete, Clear All with confirmation\r\n- **Haptics** — light taps for digits, medium for operations, heavy for \"=\", and an error buzz that fires once when an error appears (toggle in Settings)\r\n- **Unit & currency converter** — Length, Weight, Temperature, Volume, Speed, Data, and Currency (offline October 2026 rates per 1 USD, labelled approximate — not live)\r\n- **Colour picker** — 8 accent presets or any custom colour; operation keys follow it, with clamped values and readable text for light accents\r\n- **Icon changing** — switch the Home Screen icon in Settings: Classic Orange, Blue, Green, Purple, or Mono. All alternate icons are bundled in the asset catalog (verified in the built app's Info.plist)\r\n- **Appearance override** — System / Light / Dark in Settings\r\n- **iPad & landscape UI** — Duo layout: calculator on the left, History / Converter / Settings panel on the right\r\n- **iPhone Duo** — landscape iPhone gets the two-pane Duo layout; Duo mode shows two independent calculators side by side (stacked in portrait) sharing one history. Rotating never loses your calculation — view models live in the root views\r\n\r\n### Download\r\n- `Calculator.ipa` (unsigned) — built by GitHub Actions run #10 (macos-26, Xcode 26.6), bundle ID `com.c12n.calculator`, version 1.1.1 (build 3)\r\n- SHA-256 (Calculator.ipa): `7c309a4575f10f05f0a97e6e4459182d68256620759dcacd5e93c98d1fadc662`\r\n\r\n### Installing\r\nThis IPA is unsigned. It will not install on a stock iPhone by itself — re-sign / sideload it with your own Apple ID, or run the project on a device from Xcode.\r\n\r\n### License\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/swiftui-calculator/releases/download/v1.1.1/Calculator.ipa",
+          "size": 387573,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.1",
+          "buildVersion": "1.0.1",
+          "date": "2026-10-26T21:04:17Z",
+          "localizedDescription": "## SwiftUI Calculator v1.0.1\r\n\r\nLiquid Glass polish from a Claude review of the v1.0.0 code. No feature changes.\r\n\r\n### Fixes\r\n- `GlassEffectContainer` spacing reduced from 14 to 4, so neighbouring Liquid Glass keys no longer risk bridging/merging into each other, especially when an interactive key swells on press\r\n- On iOS 26, the custom button press effect (brightness + scale) no longer stacks on top of interactive Liquid Glass press feedback — glass handles it natively now; the custom effect still applies on iOS 17-25\r\n\r\n### Download\r\n- `Calculator.ipa` (unsigned) — built by GitHub Actions run #4 (macos-26, Xcode 26.6), bundle ID `com.c12n.calculator`, version 1.0.1\r\n- SHA-256 (Calculator.ipa): `8173a0b438e5ab25273c69d9ab9bf6543b6b0fff0688b9016f9d7f485a2270e0`\r\n\r\n### Installing\r\nThis IPA is unsigned. It will not install on a stock iPhone by itself — re-sign / sideload it with your own Apple ID, or run the project on a device from Xcode.\r\n\r\n### License\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/swiftui-calculator/releases/download/v1.0.1/Calculator.ipa",
+          "size": 262275,
+          "minOSVersion": "17.0"
+        },
+        {
+          "version": "1.0.0",
+          "buildVersion": "1.0.0",
+          "date": "2026-10-26T20:58:05Z",
+          "localizedDescription": "## SwiftUI Calculator — first release\r\n\r\nA modern calculator for iPhone and iPad, built with SwiftUI.\r\n\r\n### Highlights\r\n- SwiftUI calculator app (iOS 17+), originally generated with Claude\r\n- Native Liquid Glass UI on iOS 26, with an adaptive fallback on iOS 17-25\r\n- Native Light / Dark Mode — follows the system appearance\r\n- Custom app icon, including Dark and Tinted variants\r\n- Easter egg: dividing by zero says \"bruh\"\r\n\r\n### Download\r\n- `Calculator.ipa` (unsigned) — built by GitHub Actions (macos-26, Xcode 26.6), bundle ID `com.c12n.calculator`, version 1.0\r\n- SHA-256 (Calculator.ipa): `4dbe79bb9916f4ababfdb50037ce5ecc21364b6b72eae08b52f80bbb1ee36fff`\r\n\r\n### Installing\r\nThis IPA is unsigned. It will not install on a stock iPhone by itself — re-sign / sideload it with your own Apple ID, or run the project on a device from Xcode.\r\n\r\n### License\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/swiftui-calculator/releases/download/v1.0.0/Calculator.ipa",
+          "size": 261872,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "version": "1.1.1",
+      "versionDate": "2026-10-26T21:57:34Z",
+      "versionDescription": "## SwiftUI Calculator v1.1.1\r\n\r\nThe full 1.1 feature release, with Claude's review fixes folded in (this supersedes the planned 1.1.0 — there is no separate 1.1.0 release).\r\n\r\n### New in 1.1\r\n- **Math history** — every \"=\" result is saved (persisted, latest first, up to 100). History records the full chained expression (e.g. \"2 + 3 × 4\"), tap an entry to reuse its exact value, swipe to delete, Clear All with confirmation\r\n- **Haptics** — light taps for digits, medium for operations, heavy for \"=\", and an error buzz that fires once when an error appears (toggle in Settings)\r\n- **Unit & currency converter** — Length, Weight, Temperature, Volume, Speed, Data, and Currency (offline October 2026 rates per 1 USD, labelled approximate — not live)\r\n- **Colour picker** — 8 accent presets or any custom colour; operation keys follow it, with clamped values and readable text for light accents\r\n- **Icon changing** — switch the Home Screen icon in Settings: Classic Orange, Blue, Green, Purple, or Mono. All alternate icons are bundled in the asset catalog (verified in the built app's Info.plist)\r\n- **Appearance override** — System / Light / Dark in Settings\r\n- **iPad & landscape UI** — Duo layout: calculator on the left, History / Converter / Settings panel on the right\r\n- **iPhone Duo** — landscape iPhone gets the two-pane Duo layout; Duo mode shows two independent calculators side by side (stacked in portrait) sharing one history. Rotating never loses your calculation — view models live in the root views\r\n\r\n### Download\r\n- `Calculator.ipa` (unsigned) — built by GitHub Actions run #10 (macos-26, Xcode 26.6), bundle ID `com.c12n.calculator`, version 1.1.1 (build 3)\r\n- SHA-256 (Calculator.ipa): `7c309a4575f10f05f0a97e6e4459182d68256620759dcacd5e93c98d1fadc662`\r\n\r\n### Installing\r\nThis IPA is unsigned. It will not install on a stock iPhone by itself — re-sign / sideload it with your own Apple ID, or run the project on a device from Xcode.\r\n\r\n### License\r\nMIT — Copyright (c) 2026 c12n Apps",
+      "downloadURL": "https://github.com/c12n/swiftui-calculator/releases/download/v1.1.1/Calculator.ipa",
+      "size": 387573,
+      "minOSVersion": "17.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    },
+    {
+      "name": "Fastfetch",
+      "bundleIdentifier": "com.c12n.fastfetch",
+      "developerName": "c12n Apps",
+      "subtitle": "Neofetch-style system info for iPhone",
+      "localizedDescription": "Fastfetch for iOS — a tiny neofetch-style system information app. See your device model, chip, kernel, memory, storage and uptime at a glance, in classic Fastfetch style.",
+      "iconURL": "https://c12nfeather.07051969.xyz/icons/fastfetch.png",
+      "tintColor": "#A855F7",
+      "category": "utilities",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "buildVersion": "1",
+          "date": "2026-10-27T01:15:10Z",
+          "localizedDescription": "Fastfetch for iOS 1.0.0 — a tiny neofetch-style system info app.\r\n\r\nShows device model + identifier, SoC, iOS version, kernel version, hostname, CPU cores, RAM, storage, battery and uptime. Everything is computed on-device with public APIs.\r\n\r\nInstall: the IPA is unsigned — sideload it with AltStore, SideStore, Sideloadly or a similar tool, which signs it with your Apple ID. Requires iOS 17.0+.\r\n\r\nFastfetch.ipa — 46,944 bytes — SHA-256: 499b48d4e04e21d4a532f9a5f5d4dff63b99662bd13579abb6b5e0f74595c141\r\n\r\nMIT — Copyright (c) 2026 c12n Apps",
+          "downloadURL": "https://github.com/c12n/fastfetch/releases/download/v1.0.0/Fastfetch.ipa",
+          "size": 46944,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "version": "1.0.0",
+      "versionDate": "2026-10-27T01:15:10Z",
+      "versionDescription": "Fastfetch for iOS 1.0.0 — a tiny neofetch-style system info app.\r\n\r\nShows device model + identifier, SoC, iOS version, kernel version, hostname, CPU cores, RAM, storage, battery and uptime. Everything is computed on-device with public APIs.\r\n\r\nInstall: the IPA is unsigned — sideload it with AltStore, SideStore, Sideloadly or a similar tool, which signs it with your Apple ID. Requires iOS 17.0+.\r\n\r\nFastfetch.ipa — 46,944 bytes — SHA-256: 499b48d4e04e21d4a532f9a5f5d4dff63b99662bd13579abb6b5e0f74595c141\r\n\r\nMIT — Copyright (c) 2026 c12n Apps",
+      "downloadURL": "https://github.com/c12n/fastfetch/releases/download/v1.0.0/Fastfetch.ipa",
+      "size": 46944,
+      "minOSVersion": "17.0",
+      "beta": false,
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      }
+    }
+  ],
+  "news": [
+    {
+      "identifier": "com.c12n.viulivetv-1.3.1",
+      "title": "Viu Live TV 1.3.1 is out",
+      "caption": "Update Viu Live TV to version 1.3.1.",
+      "date": "2026-10-29T05:59:58Z",
+      "tintColor": "#F5C518",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/viu-live-tv.png",
+      "notify": false,
+      "appID": "com.c12n.viulivetv"
+    },
+    {
+      "identifier": "com.c12n.matchamusic-1.0.0",
+      "title": "Matcha Music 1.0.0 is out",
+      "caption": "Update Matcha Music to version 1.0.0.",
+      "date": "2026-10-30T02:25:19Z",
+      "tintColor": "#7FB069",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/matcha-music.png",
+      "notify": false,
+      "appID": "com.c12n.matchamusic"
+    },
+    {
+      "identifier": "com.c12n.taptapphoenix-0.4.0",
+      "title": "Tap Tap Phoenix 0.4.0 is out",
+      "caption": "Update Tap Tap Phoenix to version 0.4.0.",
+      "date": "2026-10-31T03:57:47Z",
+      "tintColor": "#FF6B35",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/taptapphoenix.png",
+      "notify": false,
+      "appID": "com.c12n.taptapphoenix"
+    },
+    {
+      "identifier": "com.c12n.retrophone-0.2.0",
+      "title": "RetroPhone 0.2.0 is out",
+      "caption": "Update RetroPhone to version 0.2.0.",
+      "date": "2026-10-30T04:08:07Z",
+      "tintColor": "#3B82F6",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/retrophone.png",
+      "notify": false,
+      "appID": "com.c12n.retrophone"
+    },
+    {
+      "identifier": "com.j0shua.S5LBox-1.1.0",
+      "title": "S5LBox 1.1.0 is out",
+      "caption": "Update S5LBox to version 1.1.0.",
+      "date": "2026-10-29T22:12:00Z",
+      "tintColor": "#6B7280",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/S5LBox.png",
+      "notify": false,
+      "appID": "com.j0shua.S5LBox"
+    },
+    {
+      "identifier": "com.c12n.tether-1.0",
+      "title": "Tether 1.0 is out",
+      "caption": "Update Tether to version 1.0.",
+      "date": "2026-10-28T17:23:23Z",
+      "tintColor": "#0EA5E9",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/tether.png",
+      "notify": false,
+      "appID": "com.c12n.tether"
+    },
+    {
+      "identifier": "com.c12n.calculator-1.1.1",
+      "title": "Calculator 1.1.1 is out",
+      "caption": "Update Calculator to version 1.1.1.",
+      "date": "2026-10-26T21:57:34Z",
+      "tintColor": "#FF9500",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/swiftui-calculator.png",
+      "notify": false,
+      "appID": "com.c12n.calculator"
+    },
+    {
+      "identifier": "com.c12n.fastfetch-1.0.0",
+      "title": "Fastfetch 1.0.0 is out",
+      "caption": "Update Fastfetch to version 1.0.0.",
+      "date": "2026-10-27T01:15:10Z",
+      "tintColor": "#A855F7",
+      "imageURL": "https://c12nfeather.07051969.xyz/icons/fastfetch.png",
+      "notify": false,
+      "appID": "com.c12n.fastfetch"
+    }
+  ]
+}
