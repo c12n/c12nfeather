@@ -156,6 +156,15 @@
       "category": "games",
       "versions": [
         {
+          "version": "0.5.1",
+          "buildVersion": "0.5.1",
+          "date": "2026-10-31T04:18:13Z",
+          "localizedDescription": "Tap Tap Phoenix v0.5.1 — remade for modern iOS by c12n Apps.\n\nNew in this build:\n- First custom song added: \"The 6 7 Song\" by Lil Godd (Easy, 1:56) — audio embedded into the game data and a chart generated from the track, with leaderboard support and a score cap like the built-in songs\n- v0.5.1 fixes the custom song playing in silence: the audio is now embedded as uncompressed WAV, the same format the original songs use\n\nFrom v0.4.0:\n- A hidden 24th song unlocked: \"Legend ft Backchat\" by Jaroslav Beck (Easy) — its audio and chart were inside the game all along, but the original developers never added it to the catalog\n- No Fail practice mode: a new Options toggle. Misses still show, but they no longer reset your combo or multiplier, and No Fail runs are not registered on the leaderboard\n- A progress bar under the in-song HUD shows how far through the song you are\n- Server side: leaderboard scores are now capped at each chart's true maximum, so forged scores are rejected\n\n\nFrom v0.2.0:\n- Accounts and the online leaderboard work again — the original server is gone, so the game now talks to a c12n-hosted revival of the same endpoints\n- Accessibility pack: more forgiving hit timing (Perfect and Great windows roughly doubled) and high-contrast notes — white-ringed orbs on darkened backgrounds\n\n- arm64-only build, minimum iOS 15.0, privacy manifest included\n- original credits kept, with a c12n Apps line added at the bottom\n- unsigned sideload IPA — sign it with Feather, SignLab, AltStore or your tool of choice",
+          "downloadURL": "https://github.com/c12n/taptapphoenix/releases/download/v0.5.1/TapTapPhoenix-c12n-0.5.1.ipa",
+          "size": 338906179,
+          "minOSVersion": "15.0"
+        },
+        {
           "version": "0.4.0",
           "buildVersion": "0.4.0",
           "date": "2026-10-31T03:57:47Z",
@@ -192,11 +201,11 @@
           "minOSVersion": "15.0"
         }
       ],
-      "version": "0.4.0",
-      "versionDate": "2026-10-31T03:57:47Z",
-      "versionDescription": "Tap Tap Phoenix v0.4.0 — remade for modern iOS by c12n Apps.\n\nNew in this build:\n- A hidden 24th song unlocked: \"Legend ft Backchat\" by Jaroslav Beck (Easy) — its audio and chart were inside the game all along, but the original developers never added it to the catalog\n- No Fail practice mode: a new Options toggle. Misses still show, but they no longer reset your combo or multiplier, and No Fail runs are not registered on the leaderboard\n- A progress bar under the in-song HUD shows how far through the song you are\n- Server side: leaderboard scores are now capped at each chart's true maximum, so forged scores are rejected\n\nFrom v0.4.0:\n- Safe-area fix: the in-song HUD (multiplier, score/MISS, combo) and the end-of-song stats readout now sit clear of the notch and Dynamic Island on devices without a home button\n- The song list now shows each track's length on the right of its row\n\nFrom v0.2.0:\n- Accounts and the online leaderboard work again — the original server is gone, so the game now talks to a c12n-hosted revival of the same endpoints\n- Accessibility pack: more forgiving hit timing (Perfect and Great windows roughly doubled) and high-contrast notes — white-ringed orbs on darkened backgrounds\n\n- arm64-only build, minimum iOS 15.0, privacy manifest included\n- original credits kept, with a c12n Apps line added at the bottom\n- unsigned sideload IPA — sign it with Feather, SignLab, AltStore or your tool of choice",
-      "downloadURL": "https://github.com/c12n/taptapphoenix/releases/download/v0.4.0/TapTapPhoenix-c12n-0.4.0.ipa",
-      "size": 329094199,
+      "version": "0.5.1",
+      "versionDate": "2026-10-31T04:18:13Z",
+      "versionDescription": "Tap Tap Phoenix v0.5.1 — remade for modern iOS by c12n Apps.\n\nNew in this build:\n- First custom song added: \"The 6 7 Song\" by Lil Godd (Easy, 1:56) — audio embedded into the game data and a chart generated from the track, with leaderboard support and a score cap like the built-in songs\n- v0.5.1 fixes the custom song playing in silence: the audio is now embedded as uncompressed WAV, the same format the original songs use\n\nFrom v0.4.0:\n- A hidden 24th song unlocked: \"Legend ft Backchat\" by Jaroslav Beck (Easy) — its audio and chart were inside the game all along, but the original developers never added it to the catalog\n- No Fail practice mode: a new Options toggle. Misses still show, but they no longer reset your combo or multiplier, and No Fail runs are not registered on the leaderboard\n- A progress bar under the in-song HUD shows how far through the song you are\n- Server side: leaderboard scores are now capped at each chart's true maximum, so forged scores are rejected\n\n\nFrom v0.2.0:\n- Accounts and the online leaderboard work again — the original server is gone, so the game now talks to a c12n-hosted revival of the same endpoints\n- Accessibility pack: more forgiving hit timing (Perfect and Great windows roughly doubled) and high-contrast notes — white-ringed orbs on darkened backgrounds\n\n- arm64-only build, minimum iOS 15.0, privacy manifest included\n- original credits kept, with a c12n Apps line added at the bottom\n- unsigned sideload IPA — sign it with Feather, SignLab, AltStore or your tool of choice",
+      "downloadURL": "https://github.com/c12n/taptapphoenix/releases/download/v0.5.1/TapTapPhoenix-c12n-0.5.1.ipa",
+      "size": 338906179,
       "minOSVersion": "15.0",
       "beta": false,
       "appPermissions": {
@@ -414,10 +423,10 @@
       "appID": "com.c12n.matchamusic"
     },
     {
-      "identifier": "com.c12n.taptapphoenix-0.4.0",
-      "title": "Tap Tap Phoenix 0.4.0 is out",
-      "caption": "Update Tap Tap Phoenix to version 0.4.0.",
-      "date": "2026-10-31T03:57:47Z",
+      "identifier": "com.c12n.taptapphoenix-0.5.1",
+      "title": "Tap Tap Phoenix 0.5.1 is out",
+      "caption": "Update Tap Tap Phoenix to version 0.5.1.",
+      "date": "2026-10-31T04:18:13Z",
       "tintColor": "#FF6B35",
       "imageURL": "https://c12nfeather.07051969.xyz/icons/taptapphoenix.png",
       "notify": false,
