@@ -9,13 +9,13 @@
       "description": "Prayer times for Al Rashid Mosque in Edmonton, from the mosque's own timetable. Home Screen and Lock Screen widgets, a Live Activity that counts down to the next prayer and flips on its own at Adhan time, Dynamic Island, Qibla compass (about 25° from north in Edmonton), Quran Quote of the Day, Adhan sound choices, and English / Arabic (RTL) / French. Large text sizes built in.\n\nAlso on TestFlight as Edmonton Prayer App.",
       "hosted": {
         "bundleIdentifier": "com.c12n.alrashidwidget",
-        "version": "1.5.3",
-        "buildVersion": "20",
+        "version": "1.3.1",
+        "buildVersion": "15",
         "minOSVersion": "17.0",
-        "size": 2766545,
-        "date": "2026-11-02T02:45:00Z",
+        "size": 2719880,
+        "date": "2026-10-31T03:05:00Z",
         "downloadPath": "ipas/alrashid-widget.ipa",
-        "versionDescription": "Signing fix for the Live Activity push registration: the TestFlight pipeline now signs with explicit App Store profiles carrying the push entitlement (aps-environment: production) — verified on device, the app now shows 'Live Activity updates: Connected' and the server holds all 70 prayer-boundary updates. A newer build also retries the push activity request once when an older build left a tokenless activity behind. Note: sideload re-signing (Feather/AltStore) replaces the profile, so sideloaded copies still run the Live Activity in local mode; the TestFlight build gets the full server-driven rollover."
+        "versionDescription": "Live Activity now updates itself with server pushes, with a local fallback. Qibla verified at 25°."
       }
     },
     {
@@ -34,6 +34,24 @@
         "date": "2026-10-30T02:18:00Z",
         "downloadPath": "ipas/dats-edmonton.ipa",
         "versionDescription": "Live pickup estimates that refresh on their own, fixed trip details, and finished-ride mapping."
+      }
+    },
+    {
+      "name": "TimeBlur",
+      "repo": "timeblur",
+      "subtitle": "Blur screenshot times & strip all metadata",
+      "category": "utilities",
+      "tintColor": "#007AFF",
+      "description": "Pick a screenshot and TimeBlur blurs every clock time in it — the status bar, chat timestamps, in-app clocks — using on-device OCR, then exports a clean copy re-encoded from pixels only, with all metadata removed: no EXIF, no GPS location, no dates. Per-time toggles, adjustable blur strength, PNG or JPEG, save to Photos or share. Everything happens on device.",
+      "hosted": {
+        "bundleIdentifier": "com.c12n.timeblur",
+        "version": "0.1.0",
+        "buildVersion": "1",
+        "minOSVersion": "17.0",
+        "size": 253417,
+        "date": "2026-11-02T05:40:00Z",
+        "downloadPath": "ipas/timeblur.ipa",
+        "versionDescription": "First release: blur every time in a screenshot and strip all EXIF/metadata on export."
       }
     },
     {
