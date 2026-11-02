@@ -9,13 +9,13 @@
       "description": "Prayer times for Al Rashid Mosque in Edmonton, from the mosque's own timetable. Home Screen and Lock Screen widgets, a Live Activity that counts down to the next prayer and flips on its own at Adhan time, Dynamic Island, Qibla compass (about 25° from north in Edmonton), Quran Quote of the Day, Adhan sound choices, and English / Arabic (RTL) / French. Large text sizes built in.\n\nAlso on TestFlight as Edmonton Prayer App.",
       "hosted": {
         "bundleIdentifier": "com.c12n.alrashidwidget",
-        "version": "1.5.2",
-        "buildVersion": "19",
+        "version": "1.5.3",
+        "buildVersion": "20",
         "minOSVersion": "17.0",
-        "size": 2765223,
-        "date": "2026-11-02T01:30:00Z",
+        "size": 2766545,
+        "date": "2026-11-02T02:45:00Z",
         "downloadPath": "ipas/alrashid-widget.ipa",
-        "versionDescription": "Live Activity rollover fixed: the activity now moves on to the next prayer by itself at prayer time — the push registration was rebuilt (observers from app launch, retries until the server confirms, renewal before the system activity lifetime cap), and the countdown view advances by the clock so it never sits frozen at 0:00. Settings → Alerts shows the Live Activity updates connection status."
+        "versionDescription": "Signing fix for the Live Activity push registration: the TestFlight pipeline now signs with explicit App Store profiles carrying the push entitlement (aps-environment: production) — verified on device, the app now shows 'Live Activity updates: Connected' and the server holds all 70 prayer-boundary updates. A newer build also retries the push activity request once when an older build left a tokenless activity behind. Note: sideload re-signing (Feather/AltStore) replaces the profile, so sideloaded copies still run the Live Activity in local mode; the TestFlight build gets the full server-driven rollover."
       }
     },
     {
