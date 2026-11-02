@@ -30,20 +30,20 @@
       "category": "lifestyle",
       "versions": [
         {
-          "version": "1.5.1",
-          "buildVersion": "18",
-          "date": "2026-11-01T03:27:48Z",
-          "localizedDescription": "Qibla haptics fixed: the vibration now fires only in the full-screen compass, with a new Settings option to turn haptics off entirely. The status bar hides while the prayer list is scrolled. Plus everything from 1.5: pre-prayer reminders with a choice of lead time, a Friday Jumu'ah reminder, a Hijri date offset (-1/0/+1 day), a Today/Tomorrow toggle on the schedule, the daily verse on the large widget with a share button, and tapping the Qibla card opens the full-screen compass.",
+          "version": "1.5.2",
+          "buildVersion": "19",
+          "date": "2026-11-02T01:30:00Z",
+          "localizedDescription": "Live Activity rollover fixed: the activity now moves on to the next prayer by itself at prayer time — the push registration was rebuilt (observers from app launch, retries until the server confirms, renewal before the system activity lifetime cap), and the countdown view advances by the clock so it never sits frozen at 0:00. Settings → Alerts shows the Live Activity updates connection status.",
           "downloadURL": "https://c12nfeather.07051969.xyz/ipas/alrashid-widget.ipa",
-          "size": 2755455,
+          "size": 2765223,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "1.5.1",
-      "versionDate": "2026-11-01T03:27:48Z",
-      "versionDescription": "Qibla haptics fixed: the vibration now fires only in the full-screen compass, with a new Settings option to turn haptics off entirely. The status bar hides while the prayer list is scrolled. Plus everything from 1.5: pre-prayer reminders with a choice of lead time, a Friday Jumu'ah reminder, a Hijri date offset (-1/0/+1 day), a Today/Tomorrow toggle on the schedule, the daily verse on the large widget with a share button, and tapping the Qibla card opens the full-screen compass.",
+      "version": "1.5.2",
+      "versionDate": "2026-11-02T01:30:00Z",
+      "versionDescription": "Live Activity rollover fixed: the activity now moves on to the next prayer by itself at prayer time — the push registration was rebuilt (observers from app launch, retries until the server confirms, renewal before the system activity lifetime cap), and the countdown view advances by the clock so it never sits frozen at 0:00. Settings → Alerts shows the Live Activity updates connection status.",
       "downloadURL": "https://c12nfeather.07051969.xyz/ipas/alrashid-widget.ipa",
-      "size": 2755455,
+      "size": 2765223,
       "minOSVersion": "17.0",
       "beta": false,
       "appPermissions": {
@@ -477,10 +477,10 @@
   ],
   "news": [
     {
-      "identifier": "com.c12n.alrashidwidget-1.5.1",
-      "title": "Al Rashid Prayer 1.5.1 is out",
-      "caption": "Update Al Rashid Prayer to version 1.5.1.",
-      "date": "2026-11-01T03:27:48Z",
+      "identifier": "com.c12n.alrashidwidget-1.5.2",
+      "title": "Al Rashid Prayer 1.5.2 is out",
+      "caption": "Update Al Rashid Prayer to version 1.5.2.",
+      "date": "2026-11-02T01:30:00Z",
       "tintColor": "#1B7A43",
       "imageURL": "https://c12nfeather.07051969.xyz/icons/alrashid-widget.png",
       "notify": false,
