@@ -30,20 +30,20 @@
       "category": "lifestyle",
       "versions": [
         {
-          "version": "1.5.2",
-          "buildVersion": "19",
-          "date": "2026-11-02T01:30:00Z",
-          "localizedDescription": "Live Activity rollover fixed: the activity now moves on to the next prayer by itself at prayer time — the push registration was rebuilt (observers from app launch, retries until the server confirms, renewal before the system activity lifetime cap), and the countdown view advances by the clock so it never sits frozen at 0:00. Settings → Alerts shows the Live Activity updates connection status.",
+          "version": "1.5.3",
+          "buildVersion": "20",
+          "date": "2026-11-02T02:45:00Z",
+          "localizedDescription": "Signing fix for the Live Activity push registration: the TestFlight pipeline now signs with explicit App Store profiles carrying the push entitlement (aps-environment: production) — verified on device, the app now shows 'Live Activity updates: Connected' and the server holds all 70 prayer-boundary updates. A newer build also retries the push activity request once when an older build left a tokenless activity behind. Note: sideload re-signing (Feather/AltStore) replaces the profile, so sideloaded copies still run the Live Activity in local mode; the TestFlight build gets the full server-driven rollover.",
           "downloadURL": "https://c12nfeather.07051969.xyz/ipas/alrashid-widget.ipa",
-          "size": 2765223,
+          "size": 2766545,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "1.5.2",
-      "versionDate": "2026-11-02T01:30:00Z",
-      "versionDescription": "Live Activity rollover fixed: the activity now moves on to the next prayer by itself at prayer time — the push registration was rebuilt (observers from app launch, retries until the server confirms, renewal before the system activity lifetime cap), and the countdown view advances by the clock so it never sits frozen at 0:00. Settings → Alerts shows the Live Activity updates connection status.",
+      "version": "1.5.3",
+      "versionDate": "2026-11-02T02:45:00Z",
+      "versionDescription": "Signing fix for the Live Activity push registration: the TestFlight pipeline now signs with explicit App Store profiles carrying the push entitlement (aps-environment: production) — verified on device, the app now shows 'Live Activity updates: Connected' and the server holds all 70 prayer-boundary updates. A newer build also retries the push activity request once when an older build left a tokenless activity behind. Note: sideload re-signing (Feather/AltStore) replaces the profile, so sideloaded copies still run the Live Activity in local mode; the TestFlight build gets the full server-driven rollover.",
       "downloadURL": "https://c12nfeather.07051969.xyz/ipas/alrashid-widget.ipa",
-      "size": 2765223,
+      "size": 2766545,
       "minOSVersion": "17.0",
       "beta": false,
       "appPermissions": {
@@ -477,10 +477,10 @@
   ],
   "news": [
     {
-      "identifier": "com.c12n.alrashidwidget-1.5.2",
-      "title": "Al Rashid Prayer 1.5.2 is out",
-      "caption": "Update Al Rashid Prayer to version 1.5.2.",
-      "date": "2026-11-02T01:30:00Z",
+      "identifier": "com.c12n.alrashidwidget-1.5.3",
+      "title": "Al Rashid Prayer 1.5.3 is out",
+      "caption": "Update Al Rashid Prayer to version 1.5.3.",
+      "date": "2026-11-02T02:45:00Z",
       "tintColor": "#1B7A43",
       "imageURL": "https://c12nfeather.07051969.xyz/icons/alrashid-widget.png",
       "notify": false,
