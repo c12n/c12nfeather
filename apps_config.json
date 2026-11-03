@@ -9,13 +9,13 @@
       "description": "Prayer times for Al Rashid Mosque in Edmonton, from the mosque's own timetable. Home Screen and Lock Screen widgets, a Live Activity that counts down to the next prayer and flips on its own at Adhan time, Dynamic Island, Qibla compass (about 25° from north in Edmonton), Quran Quote of the Day, Adhan sound choices, and English / Arabic (RTL) / French. Large text sizes built in.\n\nAlso on TestFlight as Edmonton Prayer App.",
       "hosted": {
         "bundleIdentifier": "com.c12n.alrashidwidget",
-        "version": "1.3.1",
-        "buildVersion": "15",
+        "version": "1.6.0",
+        "buildVersion": "21",
         "minOSVersion": "17.0",
-        "size": 2719880,
-        "date": "2026-10-31T03:05:00Z",
+        "size": 2771847,
+        "date": "2026-11-03T04:14:04Z",
         "downloadPath": "ipas/alrashid-widget.ipa",
-        "versionDescription": "Live Activity now updates itself with server pushes, with a local fallback. Qibla verified at 25°."
+        "versionDescription": "Live Activity reliability: the countdown now restarts itself at long gaps (Isha to Fajr) instead of freezing; renewal tightened and duplicates cleaned up."
       }
     },
     {
