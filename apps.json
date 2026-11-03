@@ -31,20 +31,20 @@
       "category": "lifestyle",
       "versions": [
         {
-          "version": "1.6.0",
-          "buildVersion": "21",
+          "version": "1.7.0",
+          "buildVersion": "22",
           "date": "2026-11-03T04:14:04Z",
           "localizedDescription": "Live Activity reliability: the countdown now restarts itself at long gaps (Isha to Fajr) instead of freezing; renewal tightened and duplicates cleaned up.",
           "downloadURL": "https://c12nfeather.07051969.xyz/ipas/alrashid-widget.ipa",
-          "size": 2771847,
+          "size": 2787388,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "1.6.0",
+      "version": "1.7.0",
       "versionDate": "2026-11-03T04:14:04Z",
       "versionDescription": "Live Activity reliability: the countdown now restarts itself at long gaps (Isha to Fajr) instead of freezing; renewal tightened and duplicates cleaned up.",
       "downloadURL": "https://c12nfeather.07051969.xyz/ipas/alrashid-widget.ipa",
-      "size": 2771847,
+      "size": 2787388,
       "minOSVersion": "17.0",
       "beta": false,
       "appPermissions": {
@@ -528,9 +528,9 @@
   ],
   "news": [
     {
-      "identifier": "com.c12n.alrashidwidget-1.6.0",
-      "title": "Al Rashid Prayer 1.6.0 is out",
-      "caption": "Update Al Rashid Prayer to version 1.6.0.",
+      "identifier": "com.c12n.alrashidwidget-1.7.0",
+      "title": "Al Rashid Prayer 1.7.0 is out",
+      "caption": "Update Al Rashid Prayer to version 1.7.0.",
       "date": "2026-11-03T04:14:04Z",
       "tintColor": "#1B7A43",
       "imageURL": "https://c12nfeather.07051969.xyz/icons/alrashid-widget.png",
