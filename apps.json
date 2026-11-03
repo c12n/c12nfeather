@@ -131,8 +131,8 @@
           "buildVersion": "11",
           "date": "2026-11-03T03:09:38Z",
           "localizedDescription": "One release for every platform — pick the file for your device from the assets below. This release grows as each platform's 1.5.0 build lands.\r\n\r\nWhat's new in 1.5.0:\r\n\r\n- Recently Watched: your last channels sit in a rail at the top of the All list — one tap back to what you were watching.\r\n- Last Channel: a swap button in the player takes you back to the previous channel, and pressing it again returns.\r\n- Remind Me: long-press a channel and tap the reminder for its next programme — get a notification when it starts.\r\n- Programme search: search now matches programme titles too, so you can find channels by what's on, not just by channel name.\r\n- Multiview on iPad: watch up to four channels at once — tap a pane to hear it, expand it to full screen, or add channels from the guide.\r\n\r\nv1.4.0's proper iPad UI, Chromecast, parental controls, Kids / Sports modes, language badges and filters, and all appearance themes carry over.",
-          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.5.0/ViuLiveTV-iOS-v1.5.0.ipa",
-          "size": 3385332,
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.5.0/ViuLiveTV-AppleTV-v1.5.0.ipa",
+          "size": 339856,
           "minOSVersion": "17.0"
         },
         {
@@ -220,8 +220,8 @@
       "version": "1.5.0",
       "versionDate": "2026-11-03T03:09:38Z",
       "versionDescription": "One release for every platform — pick the file for your device from the assets below. This release grows as each platform's 1.5.0 build lands.\r\n\r\nWhat's new in 1.5.0:\r\n\r\n- Recently Watched: your last channels sit in a rail at the top of the All list — one tap back to what you were watching.\r\n- Last Channel: a swap button in the player takes you back to the previous channel, and pressing it again returns.\r\n- Remind Me: long-press a channel and tap the reminder for its next programme — get a notification when it starts.\r\n- Programme search: search now matches programme titles too, so you can find channels by what's on, not just by channel name.\r\n- Multiview on iPad: watch up to four channels at once — tap a pane to hear it, expand it to full screen, or add channels from the guide.\r\n\r\nv1.4.0's proper iPad UI, Chromecast, parental controls, Kids / Sports modes, language badges and filters, and all appearance themes carry over.",
-      "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.5.0/ViuLiveTV-iOS-v1.5.0.ipa",
-      "size": 3385332,
+      "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.5.0/ViuLiveTV-AppleTV-v1.5.0.ipa",
+      "size": 339856,
       "minOSVersion": "17.0",
       "beta": false,
       "appPermissions": {
