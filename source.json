@@ -127,8 +127,17 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.4.0",
+          "buildVersion": "10",
+          "date": "2026-11-03T02:44:42Z",
+          "localizedDescription": "A proper iPad UI.\r\n\r\n- **Three-column layout on iPad** — a navigation sidebar (Channels / Favorites plus every category as a real list, with channel counts), the channel list as its own middle column for browsing, and the player in the detail area beside it. No longer just the iPhone list stretched across the screen.\r\n- The sidebar follows the same rules as before: hidden categories stay hidden, Sports Mode narrows the list to sports, Kids Mode hides the category list, and your saved category order is kept.\r\n- iPhone is unchanged.",
+          "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.4.0/ViuLiveTV.ipa",
+          "size": 3339516,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.3.1",
-          "buildVersion": "9",
+          "buildVersion": "1.3.1",
           "date": "2026-10-29T05:59:58Z",
           "localizedDescription": "Readability, language badges and a proper Appearance control.\r\n\r\n- **Bigger, easier-to-read rows** — channel names, the current programme and the \"Next\" line are all larger and now scale with the iOS text-size setting. Category chips and favorite buttons are bigger too.\r\n- **Language badge on every channel** — a small marker (EN, FR, AR, ES, …) sits right after the channel name, detected from the name's script, well-known networks, language words and country.\r\n- **Settings → Language** — filter the whole guide to a single language (English only, French only, Arabic only, …) with per-language channel counts. Default stays All Languages.\r\n- **Appearance** — the System / Light / Dark setting in Settings → Appearance is now a clear segmented control, like the AlRashid app's.\r\n- **Scrolling fix** — the sideways swipe that kept switching categories while scrolling the channel list (and made scrolling feel broken) is removed. Categories now switch by tapping the chips at the top.",
           "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.3.1/ViuLiveTV.ipa",
@@ -199,11 +208,11 @@
           "minOSVersion": "17.0"
         }
       ],
-      "version": "1.3.1",
-      "versionDate": "2026-10-29T05:59:58Z",
-      "versionDescription": "Readability, language badges and a proper Appearance control.\r\n\r\n- **Bigger, easier-to-read rows** — channel names, the current programme and the \"Next\" line are all larger and now scale with the iOS text-size setting. Category chips and favorite buttons are bigger too.\r\n- **Language badge on every channel** — a small marker (EN, FR, AR, ES, …) sits right after the channel name, detected from the name's script, well-known networks, language words and country.\r\n- **Settings → Language** — filter the whole guide to a single language (English only, French only, Arabic only, …) with per-language channel counts. Default stays All Languages.\r\n- **Appearance** — the System / Light / Dark setting in Settings → Appearance is now a clear segmented control, like the AlRashid app's.\r\n- **Scrolling fix** — the sideways swipe that kept switching categories while scrolling the channel list (and made scrolling feel broken) is removed. Categories now switch by tapping the chips at the top.",
-      "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.3.1/ViuLiveTV.ipa",
-      "size": 3323837,
+      "version": "1.4.0",
+      "versionDate": "2026-11-03T02:44:42Z",
+      "versionDescription": "A proper iPad UI.\r\n\r\n- **Three-column layout on iPad** — a navigation sidebar (Channels / Favorites plus every category as a real list, with channel counts), the channel list as its own middle column for browsing, and the player in the detail area beside it. No longer just the iPhone list stretched across the screen.\r\n- The sidebar follows the same rules as before: hidden categories stay hidden, Sports Mode narrows the list to sports, Kids Mode hides the category list, and your saved category order is kept.\r\n- iPhone is unchanged.",
+      "downloadURL": "https://github.com/c12n/viu-live-tv/releases/download/v1.4.0/ViuLiveTV.ipa",
+      "size": 3339516,
       "minOSVersion": "17.0",
       "beta": false,
       "appPermissions": {
@@ -540,10 +549,10 @@
       "appID": "com.c12n.timeblur"
     },
     {
-      "identifier": "com.c12n.viulivetv-1.3.1",
-      "title": "Viu Live TV 1.3.1 is out",
-      "caption": "Update Viu Live TV to version 1.3.1.",
-      "date": "2026-10-29T05:59:58Z",
+      "identifier": "com.c12n.viulivetv-1.4.0",
+      "title": "Viu Live TV 1.4.0 is out",
+      "caption": "Update Viu Live TV to version 1.4.0.",
+      "date": "2026-11-03T02:44:42Z",
       "tintColor": "#F5C518",
       "imageURL": "https://c12nfeather.07051969.xyz/icons/viu-live-tv.png",
       "notify": false,
