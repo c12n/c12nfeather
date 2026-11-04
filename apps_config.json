@@ -6,16 +6,16 @@
       "subtitle": "AlRashid Mosque Edmonton prayer times & widgets",
       "category": "lifestyle",
       "tintColor": "#1B7A43",
-      "description": "Prayer times for Al Rashid Mosque in Edmonton, from the mosque's own timetable. Home Screen and Lock Screen widgets, a Live Activity that counts down to the next prayer and flips on its own at Adhan time, Dynamic Island, Qibla compass (about 25° from north in Edmonton), Quran Quote of the Day, Adhan sound choices, and English / Arabic (RTL) / French. Large text sizes built in.\n\nAlso on TestFlight as Edmonton Prayer App.",
+      "description": "Prayer times for Al Rashid Mosque in Edmonton, from the mosque's own timetable. Home Screen and Lock Screen widgets, a Live Activity that counts down to the next prayer and flips on its own at Adhan time, Dynamic Island, Qibla compass (about 25\u00b0 from north in Edmonton), Quran Quote of the Day, Adhan sound choices, and English / Arabic (RTL) / French. Large text sizes built in.\n\nAlso on TestFlight as Edmonton Prayer App.",
       "hosted": {
         "bundleIdentifier": "com.c12n.alrashidwidget",
-        "version": "1.7.0",
-        "buildVersion": "22",
+        "version": "1.8.0",
+        "buildVersion": "23",
         "minOSVersion": "17.0",
-        "size": 2787388,
-        "date": "2026-11-03T04:14:04Z",
+        "size": 3225037,
+        "date": "2026-11-04T00:17:23Z",
         "downloadPath": "ipas/alrashid-widget.ipa",
-        "versionDescription": "Live Activity reliability: the countdown now restarts itself at long gaps (Isha to Fajr) instead of freezing; renewal tightened and duplicates cleaned up."
+        "versionDescription": "Apple Watch app with a watch-face complication, per-prayer alert sounds, settings backed up to iCloud so they survive reinstalls, widgets that follow your text size, and a What's New sheet after updating."
       }
     },
     {
@@ -42,7 +42,7 @@
       "subtitle": "Blur screenshot times & strip all metadata",
       "category": "utilities",
       "tintColor": "#007AFF",
-      "description": "Pick a screenshot and TimeBlur blurs every clock time in it — the status bar, chat timestamps, in-app clocks — using on-device OCR, then exports a clean copy re-encoded from pixels only, with all metadata removed: no EXIF, no GPS location, no dates. Per-time toggles, adjustable blur strength, PNG or JPEG, save to Photos or share. Everything happens on device.",
+      "description": "Pick a screenshot and TimeBlur blurs every clock time in it \u2014 the status bar, chat timestamps, in-app clocks \u2014 using on-device OCR, then exports a clean copy re-encoded from pixels only, with all metadata removed: no EXIF, no GPS location, no dates. Per-time toggles, adjustable blur strength, PNG or JPEG, save to Photos or share. Everything happens on device.",
       "hosted": {
         "bundleIdentifier": "com.c12n.timeblur",
         "version": "0.1.0",
@@ -56,7 +56,7 @@
     },
     {
       "category": "entertainment",
-      "description": "An unofficial native iOS live TV client for Viu members. Sign in once and watch live channels with the native player — AirPlay, Picture in Picture, external player options, favourites with hearts, per-channel language badges and a language filter, Kids and Sports modes, and parental controls. Liquid Glass interface with Dynamic Type for readability, in System, Light or Dark appearance.\n\nRequires a Viu account. Live TV only.",
+      "description": "An unofficial native iOS live TV client for Viu members. Sign in once and watch live channels with the native player \u2014 AirPlay, Picture in Picture, external player options, favourites with hearts, per-channel language badges and a language filter, Kids and Sports modes, and parental controls. Liquid Glass interface with Dynamic Type for readability, in System, Light or Dark appearance.\n\nRequires a Viu account. Live TV only.",
       "excludeTagPrefixes": [
         "mobile-",
         "tv-"
@@ -76,7 +76,7 @@
     },
     {
       "category": "games",
-      "description": "Tap Tap Phoenix remade for iOS 26 / 27 by c12n Apps, with the original credits kept. Tap the orbs in time with the music across the full song catalogue — including the hidden track 'Legend ft Backchat' by Jaroslav Beck and custom songs. Online accounts and leaderboards are revived on a c12n server, with an accessibility pack: wider Perfect / Great timing windows, high-contrast orbs, a No Fail practice mode and a song progress bar.\n\nRemade for modern iOS by c12n Apps with ❤️ from Canada.",
+      "description": "Tap Tap Phoenix remade for iOS 26 / 27 by c12n Apps, with the original credits kept. Tap the orbs in time with the music across the full song catalogue \u2014 including the hidden track 'Legend ft Backchat' by Jaroslav Beck and custom songs. Online accounts and leaderboards are revived on a c12n server, with an accessibility pack: wider Perfect / Great timing windows, high-contrast orbs, a No Fail practice mode and a song progress bar.\n\nRemade for modern iOS by c12n Apps with \u2764\ufe0f from Canada.",
       "name": "Tap Tap Phoenix",
       "repo": "taptapphoenix",
       "subtitle": "The rhythm game, remade for modern iOS",
@@ -84,7 +84,7 @@
     },
     {
       "category": "utilities",
-      "description": "RetroPhone runs real iPhone OS 3.1.3 and iOS 4.2.1 on modern iPhones using the S5LBox full-system emulator. Firmware downloads automatically from Apple with SHA-256 verification and imports itself — or import an IPSW from Files. Create machines, boot them, and watch live scanout diagnostics.\n\nNote: the emulated display is a work in progress — the guest system boots, but the compositor may not draw yet on some builds.",
+      "description": "RetroPhone runs real iPhone OS 3.1.3 and iOS 4.2.1 on modern iPhones using the S5LBox full-system emulator. Firmware downloads automatically from Apple with SHA-256 verification and imports itself \u2014 or import an IPSW from Files. Create machines, boot them, and watch live scanout diagnostics.\n\nNote: the emulated display is a work in progress \u2014 the guest system boots, but the compositor may not draw yet on some builds.",
       "name": "RetroPhone",
       "repo": "retrophone",
       "subtitle": "iPhone OS 3.1.3 and iOS 4.2.1, emulated",
@@ -101,7 +101,7 @@
     },
     {
       "category": "utilities",
-      "description": "Share your iPhone's internet connection with an iPad, Mac or travel router over WireGuard — even when your carrier plan blocks the built-in hotspot.",
+      "description": "Share your iPhone's internet connection with an iPad, Mac or travel router over WireGuard \u2014 even when your carrier plan blocks the built-in hotspot.",
       "name": "Tether",
       "repo": "tether",
       "subtitle": "Share your iPhone internet over WireGuard",
@@ -109,7 +109,7 @@
     },
     {
       "category": "utilities",
-      "description": "A modern calculator for iOS 17+ with calculation history, haptics, a unit converter, a colour picker, changeable app icons and a Duo UI. Clean, fast, and private — everything stays on your device.",
+      "description": "A modern calculator for iOS 17+ with calculation history, haptics, a unit converter, a colour picker, changeable app icons and a Duo UI. Clean, fast, and private \u2014 everything stays on your device.",
       "name": "Calculator",
       "repo": "swiftui-calculator",
       "subtitle": "A modern SwiftUI calculator",
@@ -117,7 +117,7 @@
     },
     {
       "category": "utilities",
-      "description": "Fastfetch for iOS — a tiny neofetch-style system information app. See your device model, chip, kernel, memory, storage and uptime at a glance, in classic Fastfetch style.",
+      "description": "Fastfetch for iOS \u2014 a tiny neofetch-style system information app. See your device model, chip, kernel, memory, storage and uptime at a glance, in classic Fastfetch style.",
       "name": "Fastfetch",
       "repo": "fastfetch",
       "subtitle": "Neofetch-style system info for iPhone",
@@ -126,7 +126,7 @@
   ],
   "source": {
     "baseURL": "https://c12nfeather.07051969.xyz",
-    "description": "The official AltStore / Feather source for c12n Apps. Every app here is built by c12n Apps and published on GitHub. This source updates itself automatically: when a new version of any app is released on GitHub, it appears here within the hour — no manual steps.\n\nAll IPAs are unsigned sideload builds. Install them with Feather or AltStore using your own certificate / Apple ID.\n\nCopyright (c) 2026 c12n Apps",
+    "description": "The official AltStore / Feather source for c12n Apps. Every app here is built by c12n Apps and published on GitHub. This source updates itself automatically: when a new version of any app is released on GitHub, it appears here within the hour \u2014 no manual steps.\n\nAll IPAs are unsigned sideload builds. Install them with Feather or AltStore using your own certificate / Apple ID.\n\nCopyright (c) 2026 c12n Apps",
     "identifier": "com.c12n.apps.source",
     "name": "c12n Apps",
     "subtitle": "Every c12n iOS app, always up to date",
