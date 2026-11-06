@@ -48,19 +48,19 @@
     "version": "0.5.1"
   },
   "tether": {
-    "buildVersion": "7",
+    "buildVersion": "15",
     "bundleIdentifier": "com.c12n.tether",
     "minOSVersion": "17.0",
     "name": "Tether",
-    "tag": "v1.0.0",
-    "version": "1.0"
+    "tag": "v1.1.0",
+    "version": "1.1.0"
   },
   "viu-live-tv": {
-    "buildVersion": "11",
+    "buildVersion": "12",
     "bundleIdentifier": "com.c12n.viulivetv",
     "minOSVersion": "17.0",
     "name": "Viu Live TV",
-    "tag": "v1.5.0",
-    "version": "1.5.0"
+    "tag": "v2.0.0",
+    "version": "2.0.0"
   }
 }
