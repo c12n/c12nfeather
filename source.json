@@ -422,11 +422,20 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.1.1",
+          "buildVersion": "23",
+          "date": "2026-11-07T00:32:15Z",
+          "localizedDescription": "# Ferry v1.1.1 | unsigned IPA\r\n\r\nUnsigned sideload build of Ferry. Sign and install with SideStore, AltStore, or your usual sideloading tool.\r\n\r\n- **App:** Ferry 1.1.1 (build 23)\r\n- **Bundle ID:** com.c12n.tether\r\n- **Requires:** iOS 17.0 or later\r\n- **IPA size:** 3,517,443 bytes\r\n- **SHA-256:** fd122b38ecd5d0a585ed1bf70b10dcc04004c0f39aa022daf02c400ccd15c711\r\n\r\n## Tether is now Ferry\r\n\r\nSame app, new name. Tether is now called Ferry, to avoid confusion with other products called Tether.\r\n\r\nNothing else changes. The bundle ID stays com.c12n.tether, so this build installs as an update over Tether 1.1.0, and your paired devices, settings and usage history carry over. No device needs to be paired again.\r\n\r\n## Upstream\r\n\r\nSource: https://github.com/viktor-svirsky/tether (main @ e3ae272d5579197965b02b98364d332348081f2b)\r\nLicense: MIT, Copyright (c) 2026 Viktor Svirsky (see LICENSE in this repo)\r\n\r\nDownload Ferry on your iPhone, then any device that can install the WireGuard app or use the WireGuard protocol can use your hotspot, even when your cellular plan blocks or slows down Personal Hotspot.",
+          "downloadURL": "https://github.com/c12n/ferry/releases/download/v1.1.1/Ferry.ipa",
+          "size": 3517443,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "1.1.0",
-          "buildVersion": "15",
+          "buildVersion": "1.1.0",
           "date": "2026-11-06T21:18:14Z",
           "localizedDescription": "# Tether v1.1.0 | unsigned IPA\r\n\r\nUnsigned sideload build of Tether. Sign and install with SideStore, AltStore, or your usual sideloading tool.\r\n\r\n- **App:** Tether 1.1.0 (build 15)\r\n- **Bundle ID:** com.c12n.tether\r\n- **Requires:** iOS 17.0 or later\r\n- **IPA size:** 3,517,630 bytes\r\n- **SHA-256:** 5e888f1e45b9f7076dab408e48626245158b1602be066b7a811b6a85371b75db\r\n\r\n## What's new\r\n\r\n- **Per-device usage + data caps:** every device shows what it has used (session, today, all time) and its current speed. Set a daily cap per device (500 MB to 10 GB); at the cap the device pauses until tomorrow.\r\n- **Live Activity + widget:** sharing status, connected devices, live speeds and today's usage on the lock screen, Dynamic Island, and a home screen widget.\r\n- **Guest devices:** make any device a guest for 1, 4 or 24 hours; it is removed automatically when the time is up. Pause and resume any device without removing it.\r\n- **Notifications:** a device connects or disconnects, sharing stops, a cap is reached, or the battery runs low (each can be turned off in Settings).\r\n- **Device details:** last handshake, last seen, and a device type (iPhone, iPad, Mac, Windows PC, Router, Other) with its own icon.\r\n- **Adjustable idle timeout:** 5, 10 or 30 minutes, or Never (was fixed at 10).\r\n- **Speed history:** a graph of this session's download and upload speeds (session only; it starts empty on each launch).\r\n- **Diagnostics:** live checks for the hotspot, the WireGuard server, internet, keep-alive, battery and this build's expiry, with a shareable summary.\r\n- **Battery guard:** optionally stop sharing at 20, 30, 40 or 50% battery while unplugged, with a warning 10 points earlier and a Resume button.\r\n\r\n## Upstream\r\n\r\nSource: https://github.com/viktor-svirsky/tether (main @ e3ae272d5579197965b02b98364d332348081f2b)\r\nLicense: MIT, Copyright (c) 2026 Viktor Svirsky (see LICENSE in this repo)\r\n\r\nDownload Tether on your iPhone, then any device that can install the WireGuard app or use the WireGuard protocol can use your hotspot, even when your cellular plan blocks or slows down Personal Hotspot.",
-          "downloadURL": "https://github.com/c12n/tether/releases/download/v1.1.0/Tether.ipa",
+          "downloadURL": "https://github.com/c12n/ferry/releases/download/v1.1.0/Tether.ipa",
           "size": 3517630,
           "minOSVersion": "17.0"
         },
@@ -435,16 +444,16 @@
           "buildVersion": "1.0.0",
           "date": "2026-10-28T17:23:23Z",
           "localizedDescription": "Unsigned sideload build of Tether. Sign and install with SideStore, AltStore, or your usual sideloading tool.\r\n\r\n- **App:** Tether 1.0 (build 7)\r\n- **Bundle ID:** com.c12n.tether\r\n- **Requires:** iOS 17.0 or later\r\n- **IPA size:** 3,325,551 bytes\r\n- **SHA-256:** 00cfe70ca0007fcaa8be3a7cbc279f5d43ff0971830e6f03e98b7917103b9c6a\r\n\r\n## Upstream\r\n\r\nSource: https://github.com/viktor-svirsky/tether (main @ e3ae272d5579197965b02b98364d332348081f2b)\r\nLicense: MIT — Copyright (c) 2026 Viktor Svirsky (see LICENSE in this repo)\r\n\r\nTether shares your iPhone's internet with an iPad, Mac or travel router over WireGuard, even when your plan blocks hotspot.",
-          "downloadURL": "https://github.com/c12n/tether/releases/download/v1.0.0/Tether.ipa",
+          "downloadURL": "https://github.com/c12n/ferry/releases/download/v1.0.0/Tether.ipa",
           "size": 3325551,
           "minOSVersion": "17.0"
         }
       ],
-      "version": "1.1.0",
-      "versionDate": "2026-11-06T21:18:14Z",
-      "versionDescription": "# Tether v1.1.0 | unsigned IPA\r\n\r\nUnsigned sideload build of Tether. Sign and install with SideStore, AltStore, or your usual sideloading tool.\r\n\r\n- **App:** Tether 1.1.0 (build 15)\r\n- **Bundle ID:** com.c12n.tether\r\n- **Requires:** iOS 17.0 or later\r\n- **IPA size:** 3,517,630 bytes\r\n- **SHA-256:** 5e888f1e45b9f7076dab408e48626245158b1602be066b7a811b6a85371b75db\r\n\r\n## What's new\r\n\r\n- **Per-device usage + data caps:** every device shows what it has used (session, today, all time) and its current speed. Set a daily cap per device (500 MB to 10 GB); at the cap the device pauses until tomorrow.\r\n- **Live Activity + widget:** sharing status, connected devices, live speeds and today's usage on the lock screen, Dynamic Island, and a home screen widget.\r\n- **Guest devices:** make any device a guest for 1, 4 or 24 hours; it is removed automatically when the time is up. Pause and resume any device without removing it.\r\n- **Notifications:** a device connects or disconnects, sharing stops, a cap is reached, or the battery runs low (each can be turned off in Settings).\r\n- **Device details:** last handshake, last seen, and a device type (iPhone, iPad, Mac, Windows PC, Router, Other) with its own icon.\r\n- **Adjustable idle timeout:** 5, 10 or 30 minutes, or Never (was fixed at 10).\r\n- **Speed history:** a graph of this session's download and upload speeds (session only; it starts empty on each launch).\r\n- **Diagnostics:** live checks for the hotspot, the WireGuard server, internet, keep-alive, battery and this build's expiry, with a shareable summary.\r\n- **Battery guard:** optionally stop sharing at 20, 30, 40 or 50% battery while unplugged, with a warning 10 points earlier and a Resume button.\r\n\r\n## Upstream\r\n\r\nSource: https://github.com/viktor-svirsky/tether (main @ e3ae272d5579197965b02b98364d332348081f2b)\r\nLicense: MIT, Copyright (c) 2026 Viktor Svirsky (see LICENSE in this repo)\r\n\r\nDownload Tether on your iPhone, then any device that can install the WireGuard app or use the WireGuard protocol can use your hotspot, even when your cellular plan blocks or slows down Personal Hotspot.",
-      "downloadURL": "https://github.com/c12n/tether/releases/download/v1.1.0/Tether.ipa",
-      "size": 3517630,
+      "version": "1.1.1",
+      "versionDate": "2026-11-07T00:32:15Z",
+      "versionDescription": "# Ferry v1.1.1 | unsigned IPA\r\n\r\nUnsigned sideload build of Ferry. Sign and install with SideStore, AltStore, or your usual sideloading tool.\r\n\r\n- **App:** Ferry 1.1.1 (build 23)\r\n- **Bundle ID:** com.c12n.tether\r\n- **Requires:** iOS 17.0 or later\r\n- **IPA size:** 3,517,443 bytes\r\n- **SHA-256:** fd122b38ecd5d0a585ed1bf70b10dcc04004c0f39aa022daf02c400ccd15c711\r\n\r\n## Tether is now Ferry\r\n\r\nSame app, new name. Tether is now called Ferry, to avoid confusion with other products called Tether.\r\n\r\nNothing else changes. The bundle ID stays com.c12n.tether, so this build installs as an update over Tether 1.1.0, and your paired devices, settings and usage history carry over. No device needs to be paired again.\r\n\r\n## Upstream\r\n\r\nSource: https://github.com/viktor-svirsky/tether (main @ e3ae272d5579197965b02b98364d332348081f2b)\r\nLicense: MIT, Copyright (c) 2026 Viktor Svirsky (see LICENSE in this repo)\r\n\r\nDownload Ferry on your iPhone, then any device that can install the WireGuard app or use the WireGuard protocol can use your hotspot, even when your cellular plan blocks or slows down Personal Hotspot.",
+      "downloadURL": "https://github.com/c12n/ferry/releases/download/v1.1.1/Ferry.ipa",
+      "size": 3517443,
       "minOSVersion": "17.0",
       "beta": false,
       "appPermissions": {
@@ -626,10 +635,10 @@
       "appID": "com.j0shua.S5LBox"
     },
     {
-      "identifier": "com.c12n.tether-1.1.0",
-      "title": "Tether 1.1.0 is out",
-      "caption": "Update Tether to version 1.1.0.",
-      "date": "2026-11-06T21:18:14Z",
+      "identifier": "com.c12n.tether-1.1.1",
+      "title": "Tether 1.1.1 is out",
+      "caption": "Update Tether to version 1.1.1.",
+      "date": "2026-11-07T00:32:15Z",
       "tintColor": "#0EA5E9",
       "imageURL": "https://c12nfeather.07051969.xyz/icons/tether.png",
       "notify": false,

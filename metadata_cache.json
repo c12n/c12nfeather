@@ -48,12 +48,12 @@
     "version": "0.5.1"
   },
   "tether": {
-    "buildVersion": "15",
+    "buildVersion": "23",
     "bundleIdentifier": "com.c12n.tether",
     "minOSVersion": "17.0",
-    "name": "Tether",
-    "tag": "v1.1.0",
-    "version": "1.1.0"
+    "name": "Ferry",
+    "tag": "v1.1.1",
+    "version": "1.1.1"
   },
   "viu-live-tv": {
     "buildVersion": "12",
